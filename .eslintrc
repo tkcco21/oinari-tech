@@ -13,6 +13,7 @@
     "import/no-extraneous-dependencies": "off",
     "import/prefer-default-export": "off",
     "react/prop-types": "off",
+    "no-underscore-dangle": "off",
     "no-trailing-spaces": "error",
     "comma-dangle": ["error", "always-multiline"],
     "prettier/prettier": ["error", {
