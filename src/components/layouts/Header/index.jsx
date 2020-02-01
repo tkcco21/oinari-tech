@@ -8,13 +8,14 @@ const StyledHeaderInner = styled.div`
   padding: ${props => props.theme.space._32px} ${props => props.theme.space._24px};
   max-width: ${props => props.theme.width.max};
   width: ${props => props.theme.width.normal};
-  border-bottom: 1px solid #ccc; /* themeにある値を使う */
+  border-bottom: 1px solid ${props => props.theme.color.border.light};
 `
 
 const StyledHeaderTitle = styled.h1`
   font-size: ${props => props.theme.fontSize.heading.primary};
 `
 const StyledHeaderText = styled.p`
+  color: ${props => props.theme.color.font.light};
   font-size: ${props => props.theme.fontSize.text.quaternary};
 `
 
@@ -23,7 +24,7 @@ export const Header = () => {
     <StyledHeader>
       <StyledHeaderInner>
         <StyledHeaderTitle>MofMof</StyledHeaderTitle>
-        <StyledHeaderText>Web系の技術的なブログ。</StyledHeaderText>
+        <StyledHeaderText>Web系の技術的なブログ</StyledHeaderText>
       </StyledHeaderInner>
     </StyledHeader>
   )

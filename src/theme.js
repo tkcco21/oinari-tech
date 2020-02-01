@@ -1,18 +1,31 @@
 const color = {
   background: {
-    lightest: '',
-    lighter: '',
+    lightest: '#f8f8f8',
+    lighter: '#d9d9d9',
     light: '',
+    darkest: '#072635',
   },
   border: {
-    dark: '',
-    darker: '',
-    darkest: '',
+    lighter: '#ededed',
+    light: '#d9d9d9',
+    dark: '#999',
+    darker: '#595959',
+    darkest: '#141414',
+  },
+  font: {
+    default: '#333',
+    light: '#a0a0a0',
+    lightest: '#f5f6f8',
   },
   accent: {
-    main: '', // テーマカラー
-    sub: '', // アクセントカラー
-    caution: '', // 注意カラー
+    main: '#54b6e8', // テーマカラー
+    sub: '#eb6ac0', // アクセントカラー
+    caution: '#e8546d', // 注意カラー
+    link: '#1988bc', // テキストリンクカラー
+  },
+  opacity: {
+    loading: 0.5,
+    hover: 0.8,
   },
 }
 
@@ -38,6 +51,7 @@ const space = {
   _16px: '16px',
   _24px: '24px',
   _32px: '32px',
+  _40px: '40px',
   _48px: '48px',
   _56px: '56px',
 }
