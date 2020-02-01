@@ -30,7 +30,6 @@ export default ({ data }) => {
         {posts
           .filter(post => post.node.frontmatter.title.length > 0)
           .map(({ node: post }) => {
-            console.log(post)
             return (
               <StyledArticle key={post.id} to={post.frontmatter.path}>
                 <h1>{post.frontmatter.title}</h1>
