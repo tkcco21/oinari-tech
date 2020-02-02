@@ -16,7 +16,7 @@ const Template = ({ data }) => {
   const { markdownRemark: post } = data
   return (
     <>
-      <Helmet title={`${post.frontmatter.title}`} />
+      <Helmet title={post.frontmatter.title} />
 
       <Base>
         <StyledBlogWrapper>

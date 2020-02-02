@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import styled, { withTheme } from 'styled-components'
 
 import { routes } from '../../../route'
+import { useSiteMetadata } from '../../../hooks/useSiteMetadata'
 
 const StyledHeader = styled.header``
 
@@ -48,12 +49,13 @@ const activeLinkStyle = props => ({
 })
 
 const HeaderBody = props => {
+  const meta = useSiteMetadata()
   return (
     <StyledHeader>
       <StyledHeaderInner>
         <div>
-          <StyledHeaderTitle>MofMof</StyledHeaderTitle>
-          <StyledHeaderText>Web系の技術的なブログ</StyledHeaderText>
+          <StyledHeaderTitle>{meta.title}</StyledHeaderTitle>
+          <StyledHeaderText>{meta.description}</StyledHeaderText>
         </div>
 
         <StyledHeaderNavi>

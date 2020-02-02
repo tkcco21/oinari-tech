@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, graphql } from 'gatsby'
-// import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 
 import Base from '../components/layouts/Base'
@@ -21,25 +20,27 @@ const StyledArticle = styled(Link)`
 `
 
 // eslint-disable-next-line react/display-name
-export default ({ data }) => {
+export default ({ location, data }) => {
   const { edges: posts } = data.allMarkdownRemark
 
   return (
-    <Base>
-      <StyledMainWrapper>
-        {posts
-          .filter(post => post.node.frontmatter.title.length > 0)
-          .map(({ node: post }) => {
-            return (
-              <StyledArticle key={post.id} to={post.frontmatter.path}>
-                <h1>{post.frontmatter.title}</h1>
-                <p>{post.frontmatter.date}</p>
-                <p>{post.excerpt}</p>
-              </StyledArticle>
-            )
-          })}
-      </StyledMainWrapper>
-    </Base>
+    <>
+      <Base pathname={location.pathname}>
+        <StyledMainWrapper>
+          {posts
+            .filter(post => post.node.frontmatter.title.length > 0)
+            .map(({ node: post }) => {
+              return (
+                <StyledArticle key={post.id} to={post.frontmatter.path}>
+                  <h1>{post.frontmatter.title}</h1>
+                  <p>{post.frontmatter.date}</p>
+                  <p>{post.excerpt}</p>
+                </StyledArticle>
+              )
+            })}
+        </StyledMainWrapper>
+      </Base>
+    </>
   )
 }
 

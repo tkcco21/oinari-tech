@@ -6,10 +6,10 @@
 
 module.exports = {
   siteMetadata: {
-    title: `MofMof`,
+    title: `MofMof Tech Blog`,
     author: `tkcco21`,
-    description: `技術（プログラミング）的なことを発信するブログ`,
-    siteUrl: `https://mofmof.tkcco21.me`,
+    description: `プログラミングとか、日々の技術的アウトプットをするためのブログ`,
+    siteUrl: `https://tech-blog.tkcco21.me`,
     social: {
       twitter: `tkcco21`,
     },
