@@ -6,17 +6,36 @@ import { Base } from '../components/layouts/Base'
 
 const StyledMainWrapper = styled.main`
   margin: 0 auto;
-  padding: ${props => props.theme.space._48px} ${props => props.theme.space._32px};
+  padding: ${props => props.theme.space._24px} ${props => props.theme.space._32px};
   max-width: ${props => props.theme.width.max};
   width: ${props => props.theme.width.normal};
 `
-
-const StyledArticle = styled(Link)`
+const StyledArticleLink = styled(Link)`
   display: block;
-  margin-top: ${props => props.theme.space._24px};
+  padding: ${props => props.theme.space._24px} ${props => props.theme.space._8px};
+  border-top: 1px solid ${props => props.theme.color.border.light};
   &:first-child {
-    margin-top: 0;
+    border: none;
   }
+  &:hover {
+    text-decoration: underline;
+  }
+`
+const StyledArticleTitle = styled.h2`
+  font-size: ${props => props.theme.fontSize.heading.secondary};
+`
+const StyledArticleDate = styled.p`
+  margin-top: ${props => props.theme.space._4px};
+  color: ${props => props.theme.color.accent.main};
+  font-weight: bold;
+  font-size: ${props => props.theme.fontSize.text.quaternary};
+`
+const StyledArticleExcerpt = styled.p`
+  margin-top: ${props => props.theme.space._4px};
+  padding: ${props => props.theme.space._4px} 0;
+  padding-left: ${props => props.theme.space._4px};
+  font-size: ${props => props.theme.fontSize.text.tertiary};
+  border-left: 2px solid ${props => props.theme.color.border.light};
 `
 
 // eslint-disable-next-line react/display-name
@@ -31,11 +50,11 @@ export default ({ location, data }) => {
             .filter(post => post.node.frontmatter.title.length > 0)
             .map(({ node: post }) => {
               return (
-                <StyledArticle key={post.id} to={post.frontmatter.path}>
-                  <h1>{post.frontmatter.title}</h1>
-                  <p>{post.frontmatter.date}</p>
-                  <p>{post.excerpt}</p>
-                </StyledArticle>
+                <StyledArticleLink key={post.id} to={post.frontmatter.path}>
+                  <StyledArticleTitle>{post.frontmatter.title}</StyledArticleTitle>
+                  <StyledArticleDate>{post.frontmatter.date}</StyledArticleDate>
+                  <StyledArticleExcerpt>{post.excerpt}</StyledArticleExcerpt>
+                </StyledArticleLink>
               )
             })}
         </StyledMainWrapper>

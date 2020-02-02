@@ -7,11 +7,10 @@
 module.exports = {
   siteMetadata: {
     title: `MofMof Tech Blog`,
-    author: `tkcco21`,
     description: `プログラミングとか、日々の技術的アウトプットをするためのブログ`,
     siteUrl: `https://tech-blog.tkcco21.me`,
     social: {
-      twitter: `tkcco21`,
+      twitter: `@tkcco21`,
     },
   },
   plugins: [
@@ -32,8 +31,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/content/blog`,
-        name: `blog`,
+        path: `${__dirname}/content`,
+        name: `article`,
       },
     },
     `gatsby-transformer-remark`,
