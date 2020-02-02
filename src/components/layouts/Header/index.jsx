@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled, { withTheme } from 'styled-components'
 
+import { routes } from '../../../route'
+
 const StyledHeader = styled.header``
 
 const StyledHeaderInner = styled.div`
@@ -45,13 +47,6 @@ const activeLinkStyle = props => ({
   color: `${props.theme.color.font.default}`,
 })
 
-const headerLinks = [
-  { id: 1, path: '/', label: 'Home' },
-  // { id: 2, path: '/weekly-report', label: 'Weekly Report' },
-  // { id: 3, path: '/update-information', label: 'Update Information' },
-  // { id: 4, path: '/about', label: 'About' },
-]
-
 const HeaderBody = props => {
   return (
     <StyledHeader>
@@ -63,7 +58,7 @@ const HeaderBody = props => {
 
         <StyledHeaderNavi>
           <StyledHeaderNaviList>
-            {headerLinks.map(link => (
+            {routes.map(link => (
               <StyledHeaderNaviListItem key={link.id}>
                 <StyledHeaderNaviListLink
                   to={link.path}

@@ -8,7 +8,7 @@
     "prettier/react"
   ],
   "rules": {
-    "no-console": "off",
+    "no-console": "warn",
     "import/no-named-as-default": "off",
     "import/no-extraneous-dependencies": "off",
     "import/prefer-default-export": "off",
