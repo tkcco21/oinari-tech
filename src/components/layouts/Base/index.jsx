@@ -6,8 +6,7 @@ import { Head } from '../../Head'
 import { Header } from '../Header'
 import { Footer } from '../Footer'
 
-// eslint-disable-next-line react/display-name
-export default props => {
+export const Base = props => {
   const { pathname, children } = props
   return (
     <>

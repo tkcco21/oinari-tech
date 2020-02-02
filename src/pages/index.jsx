@@ -2,7 +2,7 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
 
-import Base from '../components/layouts/Base'
+import { Base } from '../components/layouts/Base'
 
 const StyledMainWrapper = styled.main`
   margin: 0 auto;

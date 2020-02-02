@@ -1,9 +1,8 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
 
-import Base from '../components/layouts/Base'
+import { Base } from '../components/layouts/Base'
 
 const StyledBlogWrapper = styled.article`
   margin: 0 auto;
@@ -12,13 +11,11 @@ const StyledBlogWrapper = styled.article`
   width: ${props => props.theme.width.normal};
 `
 
-const Template = ({ data }) => {
+const Template = ({ location, data }) => {
   const { markdownRemark: post } = data
   return (
     <>
-      <Helmet title={post.frontmatter.title} />
-
-      <Base>
+      <Base pathname={location.pathname}>
         <StyledBlogWrapper>
           <h1>{post.frontmatter.title}</h1>
           <div
