@@ -1,17 +1,30 @@
 import React from 'react'
-import { ThemeProvider } from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 
 import theme from '../../../theme'
+import { Head } from '../../Head'
 import { Header } from '../Header'
 import { Footer } from '../Footer'
 
-// eslint-disable-next-line react/display-name
-export default ({ children }) => (
-  <ThemeProvider theme={theme}>
-    <Header />
+const StyledWrapper = styled.div`
+  margin: 0 auto;
+  padding: ${props => props.theme.space._24px} ${props => props.theme.space._32px};
+  max-width: ${props => props.theme.width.max};
+  width: ${props => props.theme.width.normal};
+`
 
-    {children}
+export const Base = props => {
+  const { pathname, children } = props
+  return (
+    <>
+      <Head pathname={pathname} />
+      <ThemeProvider theme={theme}>
+        <Header />
 
-    <Footer />
-  </ThemeProvider>
-)
+        <StyledWrapper>{children}</StyledWrapper>
+
+        <Footer />
+      </ThemeProvider>
+    </>
+  )
+}

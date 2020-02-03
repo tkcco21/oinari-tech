@@ -1,8 +1,8 @@
 const color = {
   background: {
     lightest: '#f8f8f8',
-    lighter: '#d9d9d9',
-    light: '',
+    lighter: '#ececec',
+    light: '#d9d9d9',
     darkest: '#072635',
   },
   border: {
@@ -45,7 +45,7 @@ const fontSize = {
 }
 
 const space = {
-  _4px: '4px',
+  _4px: '4px',
   _8px: '8px',
   _12px: '12px',
   _16px: '16px',
