@@ -35,6 +35,11 @@ module.exports = {
         name: `article`,
       },
     },
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        excerpt_separator: `<!-- excerpt end -->`,
+      },
+    },
   ],
 }

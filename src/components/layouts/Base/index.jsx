@@ -6,7 +6,7 @@ import { Head } from '../../Head'
 import { Header } from '../Header'
 import { Footer } from '../Footer'
 
-const StyledWrapper = styled.section`
+const StyledWrapper = styled.div`
   margin: 0 auto;
   padding: ${props => props.theme.space._24px} ${props => props.theme.space._32px};
   max-width: ${props => props.theme.width.max};

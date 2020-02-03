@@ -40,34 +40,38 @@ export default ({ location, data }) => {
     <>
       <Base pathname={location.pathname}>
         <main>
-          {posts
-            .filter(post => post.node.frontmatter.title.length > 0)
-            .map(({ node: post }) => {
-              return (
-                <StyledArticleLink key={post.id} to={post.frontmatter.path}>
-                  <StyledArticleTitle>{post.frontmatter.title}</StyledArticleTitle>
-                  <StyledArticleDate>{post.frontmatter.date}</StyledArticleDate>
-                  <StyledArticleExcerpt>{post.excerpt}</StyledArticleExcerpt>
-                </StyledArticleLink>
-              )
-            })}
+          <section>
+            {posts
+              .filter(post => post.node.frontmatter.title.length > 0)
+              .map(({ node: post }) => {
+                return (
+                  <StyledArticleLink key={post.id} to={post.fields.slug}>
+                    <StyledArticleTitle>{post.frontmatter.title}</StyledArticleTitle>
+                    <StyledArticleDate>{post.frontmatter.date}</StyledArticleDate>
+                    <StyledArticleExcerpt>{post.excerpt}</StyledArticleExcerpt>
+                  </StyledArticleLink>
+                )
+              })}
+          </section>
         </main>
       </Base>
     </>
   )
 }
 
-export const pageQuery = graphql`
+export const query = graphql`
   query IndexQuery {
     allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
       edges {
         node {
-          excerpt(pruneLength: 250)
+          excerpt(pruneLength: 800)
           id
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
-            path
+          }
+          fields {
+            slug
           }
         }
       }
