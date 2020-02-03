@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{CYbA:function(e,n,a){"use strict";a.r(n);var t=a("q1tI"),o=a.n(t),r=a("kMY3");n.default=function(e){var n=e.location;return o.a.createElement(r.a,{pathname:n.pathname},o.a.createElement("h1",null,"Weekly Report"))}}}]);
+//# sourceMappingURL=component---src-pages-weekly-report-jsx-f56a21eab1254b351fb5.js.map
