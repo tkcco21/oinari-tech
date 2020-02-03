@@ -11,10 +11,9 @@ const StyledHeaderInner = styled.div`
   margin: 0 auto;
   padding: 0 ${props => props.theme.space._24px};
   padding-top: ${props => props.theme.space._32px};
-  padding-bottom: ${props => props.theme.space._8px};
   max-width: ${props => props.theme.width.max};
   width: ${props => props.theme.width.normal};
-  border-bottom: 1px solid ${props => props.theme.color.border.light};
+  border-bottom: 2px solid ${props => props.theme.color.border.light};
 `
 
 const StyledHeaderTitle = styled.h1`
@@ -29,6 +28,7 @@ const StyledHeaderNavi = styled.nav`
 `
 const StyledHeaderNaviList = styled.ul`
   display: flex;
+  margin-bottom: -2px;
 `
 const StyledHeaderNaviListItem = styled.li`
   margin-left: ${props => props.theme.space._12px};
@@ -37,6 +37,7 @@ const StyledHeaderNaviListItem = styled.li`
   }
 `
 const StyledHeaderNaviListLink = styled(Link)`
+  padding: ${props => props.theme.space._4px} ${props => props.theme.space._8px};
   color: ${props => props.theme.color.font.light};
   font-size: ${props => props.theme.fontSize.text.tertiary};
   transition: color 0.7s;
@@ -46,6 +47,7 @@ const StyledHeaderNaviListLink = styled(Link)`
 `
 const activeLinkStyle = props => ({
   color: `${props.theme.color.font.default}`,
+  borderBottom: `2px solid ${props.theme.color.accent.main}`,
 })
 
 const HeaderBody = props => {

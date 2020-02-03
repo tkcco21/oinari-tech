@@ -20,6 +20,10 @@ export const Head = ({ pathname }) => {
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content={meta.social.twitter} />
+      <link
+        href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic"
+        rel="stylesheet"
+      />
     </Helmet>
   )
 }

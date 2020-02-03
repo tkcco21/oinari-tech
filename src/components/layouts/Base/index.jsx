@@ -1,10 +1,17 @@
 import React from 'react'
-import { ThemeProvider } from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 
 import theme from '../../../theme'
 import { Head } from '../../Head'
 import { Header } from '../Header'
 import { Footer } from '../Footer'
+
+const StyledWrapper = styled.section`
+  margin: 0 auto;
+  padding: ${props => props.theme.space._24px} ${props => props.theme.space._32px};
+  max-width: ${props => props.theme.width.max};
+  width: ${props => props.theme.width.normal};
+`
 
 export const Base = props => {
   const { pathname, children } = props
@@ -14,7 +21,7 @@ export const Base = props => {
       <ThemeProvider theme={theme}>
         <Header />
 
-        {children}
+        <StyledWrapper>{children}</StyledWrapper>
 
         <Footer />
       </ThemeProvider>

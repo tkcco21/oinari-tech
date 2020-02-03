@@ -4,12 +4,6 @@ import styled from 'styled-components'
 
 import { Base } from '../components/layouts/Base'
 
-const StyledMainWrapper = styled.main`
-  margin: 0 auto;
-  padding: ${props => props.theme.space._24px} ${props => props.theme.space._32px};
-  max-width: ${props => props.theme.width.max};
-  width: ${props => props.theme.width.normal};
-`
 const StyledArticleLink = styled(Link)`
   display: block;
   padding: ${props => props.theme.space._24px} ${props => props.theme.space._8px};
@@ -33,7 +27,7 @@ const StyledArticleDate = styled.p`
 const StyledArticleExcerpt = styled.p`
   margin-top: ${props => props.theme.space._4px};
   padding: ${props => props.theme.space._4px} 0;
-  padding-left: ${props => props.theme.space._4px};
+  padding-left: ${props => props.theme.space._8px};
   font-size: ${props => props.theme.fontSize.text.tertiary};
   border-left: 2px solid ${props => props.theme.color.border.light};
 `
@@ -45,7 +39,7 @@ export default ({ location, data }) => {
   return (
     <>
       <Base pathname={location.pathname}>
-        <StyledMainWrapper>
+        <main>
           {posts
             .filter(post => post.node.frontmatter.title.length > 0)
             .map(({ node: post }) => {
@@ -57,7 +51,7 @@ export default ({ location, data }) => {
                 </StyledArticleLink>
               )
             })}
-        </StyledMainWrapper>
+        </main>
       </Base>
     </>
   )
