@@ -4,13 +4,13 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
     const fileNode = getNode(node.parent)
-    const targetDir = fileNode.relativeDirectory.split('/')[0]
+    const [articleType] = fileNode.relativeDirectory.split('/')
     const title = node.frontmatter.path
 
     createNodeField({
       node,
       name: 'slug',
-      value: `/${targetDir}${title}`,
+      value: { slugPath: `/${articleType}${title}`, articleType },
     })
   }
 }
@@ -28,7 +28,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         edges {
           node {
             fields {
-              slug
+              slug {
+                slugPath
+                articleType
+              }
             }
           }
         }
@@ -41,10 +44,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     createPage({
-      path: node.fields.slug,
+      path: node.fields.slug.slugPath,
       component: blogPostTemplate,
       context: {
-        slug: node.fields.slug,
+        slugPath: node.fields.slug.slugPath,
+        articleType: node.fields.slug.articleType,
       }, // additional data can be passed via context
     })
   })

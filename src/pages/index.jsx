@@ -44,8 +44,9 @@ export default ({ location, data }) => {
             {posts
               .filter(post => post.node.frontmatter.title.length > 0)
               .map(({ node: post }) => {
+                console.log(post)
                 return (
-                  <StyledArticleLink key={post.id} to={post.fields.slug}>
+                  <StyledArticleLink key={post.id} to={post.fields.slug.slugPath}>
                     <StyledArticleTitle>{post.frontmatter.title}</StyledArticleTitle>
                     <StyledArticleDate>{post.frontmatter.date}</StyledArticleDate>
                     <StyledArticleExcerpt>{post.excerpt}</StyledArticleExcerpt>
@@ -61,7 +62,10 @@ export default ({ location, data }) => {
 
 export const query = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+    allMarkdownRemark(
+      filter: { fields: { slug: { articleType: { eq: "blog" } } } }
+      sort: { order: DESC, fields: [frontmatter___date] }
+    ) {
       edges {
         node {
           excerpt
@@ -71,7 +75,10 @@ export const query = graphql`
             date(formatString: "MMMM DD, YYYY")
           }
           fields {
-            slug
+            slug {
+              slugPath
+              articleType
+            }
           }
         }
       }

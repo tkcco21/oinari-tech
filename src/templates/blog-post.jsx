@@ -26,8 +26,8 @@ const Template = ({ location, data }) => {
 export default Template
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+  query BlogPostBySlug($path: String!) {
+    markdownRemark(fields: { slug: { slugPath: { eq: $path } } }) {
       html
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
