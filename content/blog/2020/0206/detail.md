@@ -2,6 +2,7 @@
 path: "/detail"
 date: 2020-02-06T22:00:00
 title: "マークダウンのスタイリングのためのテスト記事"
+featuredImage: "./test.jpg"
 ---
 
 ## 考慮すべきマークダウン記法
@@ -219,7 +220,7 @@ render(<Root store={store} history={history} />, document.getElementById('app'))
 
 「はありがとう、いきなりあいたなあ。」ゴーシュ怒っはしがちょっとかっこうへゴーシュをからだを叫ぶてな次のねずみより見ますます。ありがとうみみずくはかっこうできるたのやつの公会堂から頭のようとしてゴーシュの床下から鳴っが目がぐるぐる走ってはどんとというこう笑ってやってよく出しともまるであんまり云いでしまいとまったくひるてもごくごく云い顔からききでしと来るましで。かっこうは少しむずかしいそうと出でいましんて「戻そてやるな。
 
-<img src="" alt="">
+<img src="./test.jpg" alt="test.jpg">
 
 まるで降りねえよ。かっこう。」おばあさん弾き出しはこどもで弾きと北の方と猫のようと中のなかにあきながら行っんが叫びて思わずやぶれました。
 
@@ -229,19 +230,19 @@ render(<Root store={store} history={history} />, document.getElementById('app'))
 
 子をふんでし方につかれるて何はけちうだ。
 
-<img src="" alt="">
+<img src="./sample.jpg" alt="sample.jpg">
 
 ###### ゴーシュでも置くでも。
 
 「ゴーシュでも置くでも。
 
-それのいっしょない。」猫をわらっましだ。「<a href="" target="_blank">嵐をあいましことた。</a>」
+それのいっしょない。」猫をわらっましだ。「<a href="http://google.com" target="_blank">嵐をあいましことた。</a>」
 
 ###### 耳巨も鳴って考えたます
 
 耳巨も鳴って考えたます。子はまえて「わくましと。私のゴーシュも、音、おっかさんとしほどでもたか。」
 
-ではこどもを<a href="" target="_blank">お顔愉快</a>に「ああ、みんなましのです。いやうかっんてよ。」
+ではこどもを<a href="https://www.yahoo.co.jp/" target="_blank">お顔愉快</a>に「ああ、みんなましのです。いやうかっんてよ。」
 
 とやめましまし。「悪いことか。わたし家のは明方にげのを広くでもた、恐いようはわれわれへもいいほどたか。」
 
@@ -249,7 +250,7 @@ render(<Root store={store} history={history} />, document.getElementById('app'))
 
 「なっななあ。」「するとそれをは行くたことな。これたちのままなんかです猫だり二一して二十みんなふみものです。」
 
-<a href="" target="_blank">テキストリンク<a>
+<a href="https://www.amazon.co.jp/" target="_blank">テキストリンク<a>
 
 ## とうに知っいた何はそれの屋根裏
 

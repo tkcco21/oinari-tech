@@ -1,5 +1,9 @@
 const path = require('path')
 
+// gatsby developであれば「development」
+// gatsby buildであれば「production」
+console.log(process.env.NODE_ENV)
+
 exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
