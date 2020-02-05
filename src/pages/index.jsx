@@ -1,4 +1,5 @@
 import React from 'react'
+import { Helmet } from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import styled from 'styled-components'
 
@@ -38,13 +39,13 @@ export default ({ location, data }) => {
 
   return (
     <>
+      <Helmet title="ブログ記事一覧" />
       <Base pathname={location.pathname}>
         <main>
           <section>
             {posts
               .filter(post => post.node.frontmatter.title.length > 0)
               .map(({ node: post }) => {
-                console.log(post)
                 return (
                   <StyledArticleLink key={post.id} to={post.fields.slug.slugPath}>
                     <StyledArticleTitle>{post.frontmatter.title}</StyledArticleTitle>

@@ -40,6 +40,7 @@ const StyledHeaderNaviListLink = styled(Link)`
   padding: ${props => props.theme.space._4px} ${props => props.theme.space._8px};
   color: ${props => props.theme.color.font.light};
   font-size: ${props => props.theme.fontSize.text.tertiary};
+  border-bottom: 2px solid transparent;
   transition: color 0.7s;
   &:hover {
     color: ${props => props.theme.color.font.default};
