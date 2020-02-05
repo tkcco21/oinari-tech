@@ -3,10 +3,8 @@ import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 
 import { Base } from '../components/layouts/Base'
+import { Heading } from '../components/atoms/Heading'
 
-const StyledTitle = styled.h1`
-  font-size: ${props => props.theme.fontSize.heading.primary};
-`
 const StyledTitleSecondary = styled.h2`
   margin-top: ${props => props.theme.space._24px};
   font-size: ${props => props.theme.fontSize.heading.secondary};
@@ -35,7 +33,7 @@ export default ({ location }) => {
     <>
       <Helmet title="このサイトについて" />
       <Base pathname={location.pathname}>
-        <StyledTitle>このサイトについて</StyledTitle>
+        <Heading>このサイトについて</Heading>
         <StyledText>
           このサイトは、タイトル部分にもあるように
           <br />「
