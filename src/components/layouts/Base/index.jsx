@@ -1,6 +1,7 @@
 import React from 'react'
 import styled, { ThemeProvider } from 'styled-components'
 
+import { customMedia } from '../../../media'
 import theme from '../../../theme'
 import { Head } from '../../Head'
 import { Header } from '../Header'
@@ -12,6 +13,10 @@ const StyledWrapper = styled.div`
   padding-bottom: ${props => props.theme.space._56px};
   max-width: ${props => props.theme.width.max};
   width: ${props => props.theme.width.normal};
+  ${customMedia.lessThan('m')`
+    padding: ${props => props.theme.space._16px} 0 ${props => props.theme.space._32px};
+    width: ${props => props.theme.width.wide};
+  `};
 `
 
 export const Base = props => {

@@ -17,8 +17,10 @@ const StyledTitle = styled.h1`
   font-size: ${props => props.theme.fontSize.heading.primary};
 `
 const StyledFeatureImage = styled(Img)`
+  margin: 0 auto;
   margin-top: ${props => props.theme.space._24px};
   max-width: 920px;
+  width: 90%;
 `
 
 const Template = ({ location, data }) => {

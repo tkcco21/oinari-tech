@@ -1,6 +1,14 @@
 import styled from 'styled-components'
 
 export const StyledArticle = styled.div`
+  margin-top: ${props => props.theme.space._24px};
+  /* 記事の始まりは p か h2 タグで始める */
+  & > h2,
+  & > p {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
   & > h2,
   & > h3,
   & > h4,
