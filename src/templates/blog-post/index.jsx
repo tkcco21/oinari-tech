@@ -3,11 +3,22 @@ import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
+import { StyledArticle } from './style'
 
 import { Base } from '../../components/layouts/Base'
 
+const StyledArticleWrapper = styled.article`
+  padding: 0 ${props => props.theme.space._16px};
+  padding-top: ${props => props.theme.space._12px};
+  padding-bottom: ${props => props.theme.space._32px};
+  background-color: ${props => props.theme.color.background.lighter};
+`
+const StyledTitle = styled.h1`
+  font-size: ${props => props.theme.fontSize.heading.primary};
+`
 const StyledFeatureImage = styled(Img)`
   margin-top: ${props => props.theme.space._24px};
+  max-width: 920px;
 `
 
 const Template = ({ location, data }) => {
@@ -20,16 +31,15 @@ const Template = ({ location, data }) => {
       <Helmet title={post.frontmatter.title} />
       <Base pathname={location.pathname}>
         <main>
-          <article className="blog-post-content">
-            <h1>{post.frontmatter.title}</h1>
+          <StyledArticleWrapper>
+            <StyledTitle>{post.frontmatter.title}</StyledTitle>
             {featuredImgFluid && <StyledFeatureImage fluid={featuredImgFluid} />}
 
-            <div
-              className="blog-post-content-body"
+            <StyledArticle
               // eslint-disable-next-line react/no-danger
               dangerouslySetInnerHTML={{ __html: post.html }}
             />
-          </article>
+          </StyledArticleWrapper>
         </main>
       </Base>
     </>
@@ -48,7 +58,7 @@ export const pageQuery = graphql`
         title
         featuredImage {
           childImageSharp {
-            fluid(maxWidth: 800) {
+            fluid(maxWidth: 920) {
               ...GatsbyImageSharpFluid
             }
           }
