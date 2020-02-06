@@ -1,7 +1,7 @@
 const color = {
   background: {
     lightest: '#f8f8f8',
-    lighter: '#ececec',
+    lighter: '#f2f2f2',
     light: '#d9d9d9',
     darkest: '#072635',
   },
@@ -14,6 +14,7 @@ const color = {
   },
   font: {
     default: '#333',
+    dark: '#707070',
     light: '#a0a0a0',
     lightest: '#f5f6f8',
   },
@@ -21,7 +22,7 @@ const color = {
     main: '#54b6e8', // テーマカラー
     sub: '#eb6ac0', // アクセントカラー
     caution: '#e8546d', // 注意カラー
-    link: '#1988bc', // テキストリンクカラー
+    link: '#6ac2eb', // テキストリンクカラー
   },
   opacity: {
     loading: 0.5,
