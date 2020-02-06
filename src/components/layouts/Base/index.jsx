@@ -8,7 +8,8 @@ import { Footer } from '../Footer'
 
 const StyledWrapper = styled.div`
   margin: 0 auto;
-  padding: ${props => props.theme.space._24px} ${props => props.theme.space._32px};
+  padding: ${props => props.theme.space._32px};
+  padding-bottom: ${props => props.theme.space._56px};
   max-width: ${props => props.theme.width.max};
   width: ${props => props.theme.width.normal};
 `
