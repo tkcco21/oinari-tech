@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from 'styled-components'
 
+import { customMedia } from '../../media'
+
 const StyledArticleLink = styled(Link)`
   display: block;
   padding: ${props => props.theme.space._24px} ${props => props.theme.space._8px};
@@ -12,9 +14,15 @@ const StyledArticleLink = styled(Link)`
   &:hover {
     text-decoration: underline;
   }
+  ${customMedia.lessThan('m')`
+    padding: ${props => props.theme.space._16px} ${props => props.theme.space._8px};
+  `};
 `
 const StyledArticleTitle = styled.h2`
   font-size: ${props => props.theme.fontSize.heading.secondary};
+  ${customMedia.lessThan('m')`
+    font-size: ${props => props.theme.fontSize.heading.tertiary};
+  `};
 `
 const StyledArticleDate = styled.p`
   margin-top: ${props => props.theme.space._4px};

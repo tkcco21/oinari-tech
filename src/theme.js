@@ -60,6 +60,7 @@ const space = {
 const width = {
   max: '920px',
   normal: '85%',
+  wide: '95%',
 }
 
 export default { color, fontSize, space, width }
