@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import Img from 'gatsby-image'
 import { StyledArticle } from './style'
 
+import { customMedia } from '../../media'
 import { Base } from '../../components/layouts/Base'
 
 const StyledArticleWrapper = styled.article`
@@ -12,15 +13,25 @@ const StyledArticleWrapper = styled.article`
   padding-top: ${props => props.theme.space._12px};
   padding-bottom: ${props => props.theme.space._32px};
   background-color: ${props => props.theme.color.background.lighter};
+  ${customMedia.lessThan('m')`
+    padding: ${props => props.theme.space._8px};
+    padding-bottom: ${props => props.theme.space._32px};
+  `};
 `
 const StyledTitle = styled.h1`
   font-size: ${props => props.theme.fontSize.heading.primary};
+  ${customMedia.lessThan('m')`
+    font-size: ${props => props.theme.fontSize.heading.secondary};
+  `};
 `
 const StyledFeatureImage = styled(Img)`
   margin: 0 auto;
   margin-top: ${props => props.theme.space._24px};
   max-width: 920px;
   width: 90%;
+  ${customMedia.lessThan('m')`
+    margin-top: ${props => props.theme.space._12px};
+  `};
 `
 
 const Template = ({ location, data }) => {

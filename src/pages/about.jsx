@@ -2,29 +2,41 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 
+import { customMedia } from '../media'
 import { Base } from '../components/layouts/Base'
 import { Heading } from '../components/atoms/Heading'
 
 const StyledTitleSecondary = styled.h2`
   margin-top: ${props => props.theme.space._24px};
   font-size: ${props => props.theme.fontSize.heading.secondary};
+  ${customMedia.lessThan('m')`
+    font-size: ${props => props.theme.fontSize.heading.tertiary};
+  `};
 `
 const StyledText = styled.p`
   margin-top: ${props => props.theme.space._16px};
   font-size: ${props => props.theme.fontSize.text.secondary};
+  ${customMedia.lessThan('m')`
+    font-size: ${props => props.theme.fontSize.text.tertiary};
+  `};
 `
 const StyledTextStrong = styled.span`
   color: ${props => props.theme.color.accent.main};
   font-weight: bold;
-  text-decoration: underline;
 `
 const StyledList = styled.ul`
   list-style: circle;
   margin-top: ${props => props.theme.space._12px};
   padding-left: ${props => props.theme.space._32px};
+  ${customMedia.lessThan('m')`
+    padding-left: ${props => props.theme.space._24px};
+  `};
 `
 const StyledListItem = styled.li`
   font-size: ${props => props.theme.fontSize.text.secondary};
+  ${customMedia.lessThan('m')`
+    font-size: ${props => props.theme.fontSize.text.tertiary};
+  `};
 `
 
 // eslint-disable-next-line react/display-name
