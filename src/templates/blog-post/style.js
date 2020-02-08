@@ -96,7 +96,8 @@ export const StyledArticle = styled.div`
       padding: 0 ${props => props.theme.space._4px};
       text-decoration: underline;
     }
-    & > strong {
+    & > strong,
+    & > del {
       padding: 0 2px;
     }
     & strong {
