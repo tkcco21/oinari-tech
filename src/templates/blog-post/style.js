@@ -4,13 +4,8 @@ import { customMedia } from '../../media'
 
 export const StyledArticle = styled.div`
   margin-top: ${props => props.theme.space._16px};
-  padding: ${props => props.theme.space._16px};
-  padding-bottom: ${props => props.theme.space._32px};
-  background-color: ${props => props.theme.color.background.lighter};
-  ${customMedia.lessThan('m')`
-    padding: ${props => props.theme.space._8px};
-    padding-bottom: ${props => props.theme.space._24px};
-  `};
+  line-height: 1.9;
+
   /* 記事の始まりは p か h2 タグで始める */
   & > h2,
   & > p {
@@ -30,7 +25,7 @@ export const StyledArticle = styled.div`
   & > ul,
   & > ol,
   & > blockquote {
-    margin-top: ${props => props.theme.space._12px};
+    margin-top: ${props => props.theme.space._16px};
     font-size: ${props => props.theme.fontSize.text.secondary};
     ${customMedia.lessThan('m')`
       font-size: ${props => props.theme.fontSize.text.tertiary};
@@ -52,20 +47,18 @@ export const StyledArticle = styled.div`
     }
   }
   & > h2 {
-    padding: ${props => props.theme.space._4px};
-    padding-left: ${props => props.theme.space._8px};
-    padding-right: ${props => props.theme.space._8px};
+    padding: ${props => props.theme.space._4px} ${props => props.theme.space._8px};
     font-size: ${props => props.theme.fontSize.heading.secondary};
     border-left: 5px solid ${props => props.theme.color.accent.main};
     border-bottom: 1px solid ${props => props.theme.color.accent.main};
-    background-color: ${props => props.theme.color.background.lightest};
+    background-color: ${props => props.theme.color.background.lighter};
     ${customMedia.lessThan('m')`
       padding: ${props => props.theme.space._4px};
       font-size: ${props => props.theme.fontSize.heading.tertiary};
     `};
   }
   & > h3 {
-    padding-left: ${props => props.theme.space._8px};
+    padding: 0 ${props => props.theme.space._8px};
     font-size: ${props => props.theme.fontSize.heading.secondary};
     border-left: 3px solid ${props => props.theme.color.accent.main};
     border-bottom: 2px solid ${props => props.theme.color.border.light};
@@ -75,9 +68,7 @@ export const StyledArticle = styled.div`
     `};
   }
   & > h4 {
-    padding: ${props => props.theme.space._4px};
-    padding-left: ${props => props.theme.space._8px};
-    padding-right: ${props => props.theme.space._8px};
+    padding: ${props => props.theme.space._4px} ${props => props.theme.space._8px};
     font-size: ${props => props.theme.fontSize.heading.tertiary};
     border-bottom: 1px solid ${props => props.theme.color.accent.main};
     ${customMedia.lessThan('m')`
@@ -86,9 +77,12 @@ export const StyledArticle = styled.div`
     `};
   }
   & > h5 {
-    padding: ${props => props.theme.space._4px};
+    padding: ${props => props.theme.space._4px} ${props => props.theme.space._8px};
     font-size: ${props => props.theme.fontSize.heading.quaternary};
-    border-bottom: 2px solid ${props => props.theme.color.border.light};
+    border-bottom: 1px solid ${props => props.theme.color.border.light};
+    ${customMedia.lessThan('m')`
+      padding: 0 ${props => props.theme.space._4px};
+    `};
   }
   & > p {
     font-size: ${props => props.theme.fontSize.text.secondary};
@@ -128,10 +122,10 @@ export const StyledArticle = styled.div`
   & blockquote {
     font-size: ${props => props.theme.fontSize.text.tertiary};
     padding: ${props => props.theme.space._4px};
-    padding-left: ${props => props.theme.space._12px};
+    padding-left: ${props => props.theme.space._8px};
     color: ${props => props.theme.color.font.dark};
     border-left: 3px solid ${props => props.theme.color.background.light};
-    background-color: ${props => props.theme.color.background.lightest};
+    background-color: ${props => props.theme.color.background.lighter};
     ${customMedia.lessThan('m')`
       padding-left: ${props => props.theme.space._8px};
       font-size: ${props => props.theme.fontSize.text.quaternary};

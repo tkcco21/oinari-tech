@@ -15,10 +15,11 @@ export const Head = ({ pathname }) => {
       {/* ↑ちゃんと公開するときは外す */}
 
       <meta property="description" content={meta.description} />
+      <meta property="og:description" content={meta.description} />
       <meta property="og:url" content={`${meta.siteUrl}${pathname}`} />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={meta.title} />
-      {/* <meta property="og:image" content={`${siteUrl}${icon}`} /> */}
+      <meta property="og:image" content={`${meta.siteUrl}/ogp.png`} />
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content={meta.social.twitter} />

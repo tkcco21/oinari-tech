@@ -50,6 +50,7 @@ const space = {
   _8px: '8px',
   _12px: '12px',
   _16px: '16px',
+  _20px: '20px',
   _24px: '24px',
   _32px: '32px',
   _40px: '40px',

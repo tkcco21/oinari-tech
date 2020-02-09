@@ -17,7 +17,7 @@ const StyledHeaderInner = styled.div`
   border-bottom: 2px solid ${props => props.theme.color.border.light};
   ${customMedia.lessThan('m')`
     padding: 0;
-    padding-top: ${props => props.theme.space._16px};
+    padding-top: ${props => props.theme.space._24px};
     width: ${props => props.theme.width.wide};
   `};
 `
@@ -26,13 +26,14 @@ const StyledHeaderTitle = styled.h1`
   font-size: ${props => props.theme.fontSize.heading.primary};
 `
 const StyledHeaderText = styled.p`
+  margin-top: ${props => props.theme.space._8px};
   color: ${props => props.theme.color.font.light};
-  font-size: ${props => props.theme.fontSize.text.quaternary};
+  font-size: ${props => props.theme.fontSize.text.tertiary};
 `
 const StyledHeaderNavi = styled.nav`
   margin-top: ${props => props.theme.space._24px};
   ${customMedia.lessThan('m')`
-    margin-top: ${props => props.theme.space._16px};
+    margin-top: ${props => props.theme.space._20px};
   `};
 `
 const StyledHeaderNaviList = styled.ul`
