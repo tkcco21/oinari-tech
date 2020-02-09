@@ -5,6 +5,7 @@ import { graphql } from 'gatsby'
 import { Base } from '../components/layouts/Base'
 import { ArticleLink } from '../components/ArticleLink'
 import { Heading } from '../components/atoms/Heading'
+import { Text } from '../components/atoms/Text'
 
 // eslint-disable-next-line react/display-name
 export default ({ location, data }) => {
@@ -18,11 +19,13 @@ export default ({ location, data }) => {
           <section>
             <Heading>Update Information</Heading>
 
-            {posts
-              .filter(post => post.node.frontmatter.title.length > 0)
-              .map(({ node: post }) => (
-                <ArticleLink post={post} key={post.id} />
-              ))}
+            {posts.length ? (
+              posts
+                .filter(post => post.node.frontmatter.title.length > 0)
+                .map(({ node: post }) => <ArticleLink post={post} key={post.id} />)
+            ) : (
+              <Text>記事が一つもありません。</Text>
+            )}
           </section>
         </main>
       </Base>
