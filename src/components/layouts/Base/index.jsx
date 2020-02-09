@@ -25,7 +25,7 @@ export const Base = props => {
     <>
       <Head pathname={pathname} />
       <ThemeProvider theme={theme}>
-        <Header />
+        <Header pathname={pathname} />
 
         <StyledWrapper>{children}</StyledWrapper>
 
