@@ -3,9 +3,13 @@ import styled from 'styled-components'
 import { customMedia } from '../../media'
 
 export const StyledArticle = styled.div`
-  margin-top: ${props => props.theme.space._24px};
+  margin-top: ${props => props.theme.space._16px};
+  padding: ${props => props.theme.space._16px};
+  padding-bottom: ${props => props.theme.space._32px};
+  background-color: ${props => props.theme.color.background.lighter};
   ${customMedia.lessThan('m')`
-    margin-top: ${props => props.theme.space._16px};
+    padding: ${props => props.theme.space._8px};
+    padding-bottom: ${props => props.theme.space._24px};
   `};
   /* 記事の始まりは p か h2 タグで始める */
   & > h2,
@@ -96,18 +100,12 @@ export const StyledArticle = styled.div`
       padding: 0 ${props => props.theme.space._4px};
       text-decoration: underline;
     }
-    & > strong {
+    & > strong,
+    & > del {
       padding: 0 2px;
     }
     & strong {
       font-size: 1.03em;
-    }
-    & > a {
-      color: ${props => props.theme.color.accent.link};
-      text-decoration: underline;
-      &:hover {
-        text-decoration: none;
-      }
     }
     & > code {
       /* inline code */
@@ -118,6 +116,13 @@ export const StyledArticle = styled.div`
           padding: 2px 4px;
         `};
       }
+    }
+  }
+  & a {
+    color: ${props => props.theme.color.accent.link};
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
     }
   }
   & blockquote {
