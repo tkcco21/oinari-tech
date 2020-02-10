@@ -88,6 +88,7 @@ const HeaderBody = props => {
                 <StyledHeaderNaviListLink
                   to={link.path}
                   activeStyle={activeLinkStyle(props)}
+                  partiallyActive={link.path !== '/' || props.pathname.includes('/blog/')}
                 >
                   {link.label}
                 </StyledHeaderNaviListLink>
