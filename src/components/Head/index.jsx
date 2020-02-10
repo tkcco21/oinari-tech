@@ -10,8 +10,8 @@ export const Head = ({ pathname }) => {
       <html lang="ja" />
       <meta name="viewport" content="width=device-width,initial-scale=1" />
       {/* ↓ちゃんと公開するときは外す */}
-      <meta name="robots" content="noindex" />
-      <meta name="robots" content="nofollow" />
+      {/* <meta name="robots" content="noindex" /> */}
+      {/* <meta name="robots" content="nofollow" /> */}
       {/* ↑ちゃんと公開するときは外す */}
 
       <meta property="description" content={meta.description} />
