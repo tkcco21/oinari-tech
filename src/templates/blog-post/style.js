@@ -15,8 +15,11 @@ export const StyledTitle = styled.h1`
 `
 
 export const StyledArticleBody = styled.div`
-  margin-top: ${props => props.theme.space._24px};
+  margin-top: ${props => props.theme.space._20px};
   line-height: 1.9;
+  ${customMedia.lessThan('m')`
+    margin-top: ${props => props.theme.space._12px};
+  `};
 
   /* 記事の始まりは p か h2 タグで始める */
   & > h2,
@@ -41,6 +44,7 @@ export const StyledArticleBody = styled.div`
     font-size: ${props => props.theme.font.size.text.secondary};
     letter-spacing: ${props => props.theme.font.space.little};
     ${customMedia.lessThan('m')`
+      margin-top: ${props => props.theme.space._8px};
       font-size: ${props => props.theme.font.size.text.tertiary};
     `};
   }
