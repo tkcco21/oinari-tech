@@ -14,7 +14,7 @@ const StyledWrapper = styled.div`
   max-width: ${props => props.theme.width.max};
   width: ${props => props.theme.width.normal};
   ${customMedia.lessThan('m')`
-    padding: ${props => props.theme.space._16px} 0 ${props => props.theme.space._32px};
+    padding: ${props => props.theme.space._24px} 0 ${props => props.theme.space._32px};
     width: ${props => props.theme.width.wide};
   `};
 `

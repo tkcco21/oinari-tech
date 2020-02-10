@@ -71,6 +71,7 @@ export const StyledArticleBody = styled.div`
     border-bottom: 1px solid ${props => props.theme.color.accent.main};
     background-color: ${props => props.theme.color.background.lighter};
     ${customMedia.lessThan('m')`
+      margin-top: ${props => props.theme.space._16px};
       padding: ${props => props.theme.space._4px};
       font-size: ${props => props.theme.font.size.heading.tertiary};
     `};
