@@ -12,24 +12,29 @@ export default ({ location, data }) => {
   const { edges: posts } = data.allMarkdownRemark
 
   return (
-    <>
-      <Helmet title="週報一覧" />
-      <Base pathname={location.pathname}>
-        <main>
-          <section>
-            <Heading>Weekly Report</Heading>
+    <Base pathname={location.pathname}>
+      <Helmet title="週報一覧">
+        <meta property="description" content="個人的な振り返りのための週報ページです。" />
+        <meta
+          property="og:description"
+          content="個人的な振り返りのための週報ページです。"
+        />
+      </Helmet>
 
-            {posts.length ? (
-              posts
-                .filter(post => post.node.frontmatter.title.length > 0)
-                .map(({ node: post }) => <ArticleLink post={post} key={post.id} />)
-            ) : (
-              <Text>記事が一つもありません。</Text>
-            )}
-          </section>
-        </main>
-      </Base>
-    </>
+      <main>
+        <section>
+          <Heading underline>Weekly Report</Heading>
+
+          {posts.length ? (
+            posts
+              .filter(post => post.node.frontmatter.title.length > 0)
+              .map(({ node: post }) => <ArticleLink post={post} key={post.id} />)
+          ) : (
+            <Text>記事が一つもありません。</Text>
+          )}
+        </section>
+      </main>
+    </Base>
   )
 }
 

@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Kinto Sans";
+  src: url('../../static/fonts/KintoSans-Black.woff2') format('woff2'),
+      url('../../static/fonts/KintoSans-Black.woff') format('woff'),
+      url('../../static/fonts/KintoSans-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kinto Sans";
+  src: url('../../static/fonts/KintoSans-Bold.woff2') format('woff2'),
+      url('../../static/fonts/KintoSans-Bold.woff') format('woff'),
+      url('../../static/fonts/KintoSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kinto Sans";
+  src: url('../../static/fonts/KintoSans-Medium.woff2') format('woff2'),
+      url('../../static/fonts/KintoSans-Medium.woff') format('woff'),
+      url('../../static/fonts/KintoSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Kinto Sans";
+  src: url('../../static/fonts/KintoSans-Regular.woff2') format('woff2'),
+      url('../../static/fonts/KintoSans-Regular.woff') format('woff'),
+      url('../../static/fonts/KintoSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

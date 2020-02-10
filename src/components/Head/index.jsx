@@ -15,10 +15,11 @@ export const Head = ({ pathname }) => {
       {/* ↑ちゃんと公開するときは外す */}
 
       <meta property="description" content={meta.description} />
+      <meta property="og:description" content={meta.description} />
       <meta property="og:url" content={`${meta.siteUrl}${pathname}`} />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content={meta.title} />
-      {/* <meta property="og:image" content={`${siteUrl}${icon}`} /> */}
+      <meta property="og:image" content={`${meta.siteUrl}/ogp.png`} />
 
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content={meta.social.twitter} />
@@ -28,10 +29,6 @@ export const Head = ({ pathname }) => {
       <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
       <link rel="apple-touch-icon" href="apple-touch-icon.png" />
       <link rel="icon" type="image/png" href="android-chrome-256x256.png" />
-      <link
-        href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic"
-        rel="stylesheet"
-      />
     </Helmet>
   )
 }

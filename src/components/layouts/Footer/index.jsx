@@ -14,8 +14,8 @@ const StyledFooterInner = styled.div`
 
 const StyledFooterText = styled.p`
   color: ${props => props.theme.color.font.lightest};
-  font-weight: bold;
-  font-size: ${props => props.theme.fontSize.text.quaternary};
+  font-weight: ${props => props.theme.font.weight.medium};
+  font-size: ${props => props.theme.font.size.text.tertiary};
   text-align: right;
 `
 
