@@ -11,22 +11,21 @@ export default ({ location, data }) => {
   const { edges: posts } = data.allMarkdownRemark
 
   return (
-    <>
+    <Base pathname={location.pathname}>
       <Helmet title="ブログ記事一覧" />
-      <Base pathname={location.pathname}>
-        <main>
-          <section>
-            {posts.length ? (
-              posts
-                .filter(post => post.node.frontmatter.title.length > 0)
-                .map(({ node: post }) => <ArticleLink post={post} key={post.id} />)
-            ) : (
-              <Text>記事が一つもありません。</Text>
-            )}
-          </section>
-        </main>
-      </Base>
-    </>
+
+      <main>
+        <section>
+          {posts.length ? (
+            posts
+              .filter(post => post.node.frontmatter.title.length > 0)
+              .map(({ node: post }) => <ArticleLink post={post} key={post.id} />)
+          ) : (
+            <Text>記事が一つもありません。</Text>
+          )}
+        </section>
+      </main>
+    </Base>
   )
 }
 
