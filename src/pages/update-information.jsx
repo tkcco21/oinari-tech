@@ -17,7 +17,7 @@ export default ({ location, data }) => {
       <Base pathname={location.pathname}>
         <main>
           <section>
-            <Heading>Update Information</Heading>
+            <Heading underline>Update Information</Heading>
 
             {posts.length ? (
               posts

@@ -1,20 +1,11 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
-import styled from 'styled-components'
 // import Img from 'gatsby-image'
-import { StyledArticle } from './style'
 
-import { customMedia } from '../../media'
+import { StyledTitle, StyledArticleBody } from './style'
 import { Base } from '../../components/layouts/Base'
 
-const StyledTitle = styled.h1`
-  padding: ${props => props.theme.space._4px};
-  font-size: ${props => props.theme.fontSize.heading.primary};
-  ${customMedia.lessThan('m')`
-    font-size: ${props => props.theme.fontSize.heading.secondary};
-  `};
-`
 // const StyledFeatureImage = styled(Img)`
 //   margin: 0 auto;
 //   margin-top: ${props => props.theme.space._24px};
@@ -38,8 +29,7 @@ const Template = ({ location, data }) => {
           <article>
             <StyledTitle>{post.frontmatter.title}</StyledTitle>
             {/* {featuredImgFluid && <StyledFeatureImage fluid={featuredImgFluid} />} */}
-
-            <StyledArticle
+            <StyledArticleBody
               // eslint-disable-next-line react/no-danger
               dangerouslySetInnerHTML={{ __html: post.html }}
             />

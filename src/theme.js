@@ -30,18 +30,30 @@ const color = {
   },
 }
 
-const fontSize = {
-  heading: {
-    primary: '24px',
-    secondary: '20px',
-    tertiary: '18px',
-    quaternary: '16px',
+const font = {
+  size: {
+    heading: {
+      primary: '24px',
+      secondary: '20px',
+      tertiary: '18px',
+      quaternary: '16px',
+    },
+    text: {
+      primary: '18px',
+      secondary: '16px',
+      tertiary: '14px',
+      quaternary: '12px',
+    },
   },
-  text: {
-    primary: '18px',
-    secondary: '16px',
-    tertiary: '14px',
-    quaternary: '12px',
+  weight: {
+    black: 900,
+    bold: 700,
+    medium: 500,
+    normal: 400,
+  },
+  space: {
+    little: '0.02em',
+    wide: '0.03em',
   },
 }
 
@@ -64,4 +76,4 @@ const width = {
   wide: '95%',
 }
 
-export default { color, fontSize, space, width }
+export default { color, font, space, width }

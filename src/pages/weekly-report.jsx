@@ -17,7 +17,7 @@ export default ({ location, data }) => {
       <Base pathname={location.pathname}>
         <main>
           <section>
-            <Heading>Weekly Report</Heading>
+            <Heading underline>Weekly Report</Heading>
 
             {posts.length ? (
               posts
