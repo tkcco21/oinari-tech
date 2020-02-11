@@ -8,7 +8,9 @@ export const Head = ({ pathname }) => {
   return (
     <Helmet defer={false} defaultTitle={meta.title} titleTemplate={`%s | ${meta.title}`}>
       <html lang="ja" />
+      <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
       {/* ↓ちゃんと公開するときは外す */}
       {/* <meta name="robots" content="noindex" /> */}
       {/* <meta name="robots" content="nofollow" /> */}

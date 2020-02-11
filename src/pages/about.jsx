@@ -1,7 +1,8 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 
+import { DynamicHelmet } from '../utilities/dynamicHelmet'
+import { useSiteMetadata } from '../hooks/useSiteMetadata'
 import { customMedia } from '../media'
 import { Base } from '../components/layouts/Base'
 import { Heading } from '../components/atoms/Heading'
@@ -45,18 +46,14 @@ const StyledListItem = styled.li`
 
 // eslint-disable-next-line react/display-name
 export default ({ location }) => {
+  const meta = useSiteMetadata()
+  const title = 'このサイトについて'
+  const baseTitle = meta.title
+  const description = 'MofMof Tech Blogについての説明ページです。'
+
   return (
     <Base pathname={location.pathname}>
-      <Helmet title="このサイトについて">
-        <meta
-          property="description"
-          content="MofMof Tech Blogについての説明ページです。"
-        />
-        <meta
-          property="og:description"
-          content="MofMof Tech Blogについての説明ページです。"
-        />
-      </Helmet>
+      {DynamicHelmet({ title, baseTitle, description })}
 
       <Heading underline>このサイトについて</Heading>
       <StyledText>

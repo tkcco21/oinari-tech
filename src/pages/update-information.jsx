@@ -1,7 +1,8 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 import { graphql } from 'gatsby'
 
+import { DynamicHelmet } from '../utilities/dynamicHelmet'
+import { useSiteMetadata } from '../hooks/useSiteMetadata'
 import { Base } from '../components/layouts/Base'
 import { ArticleLink } from '../components/ArticleLink'
 import { Heading } from '../components/atoms/Heading'
@@ -10,19 +11,14 @@ import { Text } from '../components/atoms/Text'
 // eslint-disable-next-line react/display-name
 export default ({ location, data }) => {
   const { edges: posts } = data.allMarkdownRemark
+  const meta = useSiteMetadata()
+  const title = '更新情報一覧'
+  const baseTitle = meta.title
+  const description = '個人で作成しているものの更新情報一覧ページです。'
 
   return (
     <Base pathname={location.pathname}>
-      <Helmet title="更新情報一覧">
-        <meta
-          property="description"
-          content="個人で作成しているものの更新情報一覧ページです。"
-        />
-        <meta
-          property="og:description"
-          content="個人で作成しているものの更新情報一覧ページです。"
-        />
-      </Helmet>
+      {DynamicHelmet({ title, baseTitle, description })}
 
       <main>
         <section>

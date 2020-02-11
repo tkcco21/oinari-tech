@@ -1,7 +1,8 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 
+import { DynamicHelmet } from '../utilities/dynamicHelmet'
+import { useSiteMetadata } from '../hooks/useSiteMetadata'
 import { customMedia } from '../media'
 import { Base } from '../components/layouts/Base'
 
@@ -17,12 +18,16 @@ const StyledText = styled.p`
 
 // eslint-disable-next-line react/display-name
 export default ({ location }) => {
+  const meta = useSiteMetadata()
+  const title = '404 ページが見つかりません'
+  const baseTitle = meta.title
+  const description = 'ページが見つかりません。'
+
   return (
-    <>
-      <Helmet title="このサイトについて" />
-      <Base pathname={location.pathname}>
-        <StyledText>申し訳ございませんが、ページが存在しません。</StyledText>
-      </Base>
-    </>
+    <Base pathname={location.pathname}>
+      {DynamicHelmet({ title, baseTitle, description })}
+
+      <StyledText>申し訳ございませんが、ページが存在しません。</StyledText>
+    </Base>
   )
 }
