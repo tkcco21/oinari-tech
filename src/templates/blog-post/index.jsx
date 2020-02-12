@@ -18,15 +18,13 @@ const Template = ({ location, data }) => {
     <Base pathname={location.pathname}>
       {DynamicHelmet({ title, baseTitle, description })}
 
-      <main>
-        <article>
-          <StyledTitle>{post.frontmatter.title}</StyledTitle>
-          <StyledArticleBody
-            // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{ __html: post.html }}
-          />
-        </article>
-      </main>
+      <article>
+        <StyledTitle>{post.frontmatter.title}</StyledTitle>
+        <StyledArticleBody
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
+      </article>
     </Base>
   )
 }

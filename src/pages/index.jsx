@@ -5,6 +5,7 @@ import { DynamicHelmet } from '../utilities/dynamicHelmet'
 import { useSiteMetadata } from '../hooks/useSiteMetadata'
 import { Base } from '../components/layouts/Base'
 import { ArticleLink } from '../components/ArticleLink'
+import { Heading } from '../components/atoms/Heading'
 import { Text } from '../components/atoms/Text'
 
 // eslint-disable-next-line react/display-name
@@ -18,17 +19,17 @@ export default ({ location, data }) => {
     <Base pathname={location.pathname}>
       {DynamicHelmet({ title, baseTitle })}
 
-      <main>
-        <section>
-          {posts.length ? (
-            posts
-              .filter(post => post.node.frontmatter.title.length > 0)
-              .map(({ node: post }) => <ArticleLink post={post} key={post.id} />)
-          ) : (
-            <Text>記事が一つもありません。</Text>
-          )}
-        </section>
-      </main>
+      <section>
+        <Heading underline>ブログ記事一覧</Heading>
+
+        {posts.length ? (
+          posts
+            .filter(post => post.node.frontmatter.title.length > 0)
+            .map(({ node: post }) => <ArticleLink post={post} key={post.id} />)
+        ) : (
+          <Text>記事が一つもありません。</Text>
+        )}
+      </section>
     </Base>
   )
 }

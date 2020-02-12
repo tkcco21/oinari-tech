@@ -27,7 +27,13 @@ export const Base = props => {
       <ThemeProvider theme={theme}>
         <Header pathname={pathname} />
 
-        <StyledWrapper>{children}</StyledWrapper>
+        <div>
+          <main>
+            <StyledWrapper>{children}</StyledWrapper>
+          </main>
+
+          <aside>サイドバー追加する</aside>
+        </div>
 
         <Footer />
       </ThemeProvider>

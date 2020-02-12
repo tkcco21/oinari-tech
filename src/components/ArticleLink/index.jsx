@@ -7,7 +7,7 @@ import { customMedia } from '../../media'
 const StyledArticleLink = styled(Link)`
   display: block;
   position: relative;
-  padding: ${props => props.theme.space._24px} ${props => props.theme.space._8px};
+  padding: ${props => props.theme.space._8px} ${props => props.theme.space._12px};
   border-top: 1px solid ${props => props.theme.color.border.light};
   &:first-of-type {
     border: none;
@@ -18,6 +18,7 @@ const StyledArticleLink = styled(Link)`
     left: 0;
     width: 100%;
     height: 100%;
+    border: 1px solid ${props => props.theme.color.border.light};
     background-color: ${props => props.theme.color.background.lighter};
     opacity: 0;
     z-index: 1;
