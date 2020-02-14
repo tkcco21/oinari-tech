@@ -2,6 +2,13 @@ import styled from 'styled-components'
 
 import { customMedia } from '../../media'
 
+export const StyledSns = styled.div`
+  display: flex;
+  justify-content: ${props => (props.right ? 'flex-end' : 'flex-start')};
+  margin-top: ${props => props.theme.space._16px};
+  font-size: 0;
+`
+
 export const StyledTitle = styled.h1`
   padding: ${props => props.theme.space._8px};
   font-weight: ${props => props.theme.font.weight.bold};
