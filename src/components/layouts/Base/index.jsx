@@ -7,7 +7,7 @@ import { Head } from '../../Head'
 import { Header } from '../Header'
 import { Footer } from '../Footer'
 
-const StyledWrapper = styled.div`
+const StyledMain = styled.main`
   margin: 0 auto;
   padding: ${props => props.theme.space._32px};
   padding-bottom: ${props => props.theme.space._56px};
@@ -27,13 +27,7 @@ export const Base = props => {
       <ThemeProvider theme={theme}>
         <Header pathname={pathname} />
 
-        <div>
-          <main>
-            <StyledWrapper>{children}</StyledWrapper>
-          </main>
-
-          <aside>サイドバー追加する</aside>
-        </div>
+        <StyledMain>{children}</StyledMain>
 
         <Footer />
       </ThemeProvider>

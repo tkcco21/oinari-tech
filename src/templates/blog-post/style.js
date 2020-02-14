@@ -121,16 +121,16 @@ export const StyledArticleBody = styled.div`
     & > del {
       padding: 0 2px;
     }
-    & > code {
-      /* inline code */
-      &.language-text {
-        margin: 0 2px;
-        padding: 2px 5px;
-        font-size: 0.9em;
-        ${customMedia.lessThan('m')`
-          padding: 2px 4px;
-        `};
-      }
+  }
+  & code {
+    /* inline code */
+    &.language-text {
+      margin: 0 2px;
+      padding: 2px 5px;
+      font-size: 0.9em;
+      ${customMedia.lessThan('m')`
+        padding: 2px 4px;
+      `};
     }
   }
   & a {
