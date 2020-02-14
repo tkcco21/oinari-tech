@@ -55,35 +55,37 @@ export default ({ location }) => {
     <Base pathname={location.pathname}>
       {DynamicHelmet({ title, baseTitle, description })}
 
-      <Heading underline>このサイトについて</Heading>
-      <StyledText>
-        このサイトは、タイトル部分にもあるように
-        <br />「
-        <StyledTextStrong>
-          プログラミングや日々の技術的アウトプットをするためのブログ
-        </StyledTextStrong>
-        」として作りました。
-      </StyledText>
-      <StyledText>記事内容としては下記の3つになります。</StyledText>
-      <StyledList>
-        <StyledListItem>単純なアウトプット記事（Home）</StyledListItem>
-        <StyledListItem>
-          週ごとの出来事・やったこと・学んだことの概要（Weekly Report）
-        </StyledListItem>
-        <StyledListItem>個人での制作物の更新情報（Update Information）</StyledListItem>
-      </StyledList>
+      <article>
+        <Heading underline>このサイトについて</Heading>
+        <StyledText>
+          このサイトは、タイトル部分にもあるように
+          <br />「
+          <StyledTextStrong>
+            プログラミングや日々の技術的アウトプットをするためのブログ
+          </StyledTextStrong>
+          」として作りました。
+        </StyledText>
+        <StyledText>記事内容としては下記の3つになります。</StyledText>
+        <StyledList>
+          <StyledListItem>単純なアウトプット記事（Home）</StyledListItem>
+          <StyledListItem>
+            週ごとの出来事・やったこと・学んだことの概要（Weekly Report）
+          </StyledListItem>
+          <StyledListItem>個人での制作物の更新情報（Update Information）</StyledListItem>
+        </StyledList>
 
-      <StyledTitleSecondary>簡単な自己紹介</StyledTitleSecondary>
-      <StyledText>
-        いわゆるフロントエンドエンジニアとして都内で働いています。
-        <br />
-        ついに5年目。
-        <br />
-        フロントエンドはいい感じに理解してるつもりです。
-        <br />
-        バックエンドもちょろっと。
-      </StyledText>
-      <StyledText>よろしくお願いします。</StyledText>
+        <StyledTitleSecondary>簡単な自己紹介</StyledTitleSecondary>
+        <StyledText>
+          いわゆるフロントエンドエンジニアとして都内で働いています。
+          <br />
+          ついに5年目。
+          <br />
+          フロントエンドはいい感じに理解してるつもりです。
+          <br />
+          バックエンドもちょろっと。
+        </StyledText>
+        <StyledText>よろしくお願いします。</StyledText>
+      </article>
     </Base>
   )
 }

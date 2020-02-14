@@ -4,8 +4,9 @@ import { graphql } from 'gatsby'
 
 import { DynamicHelmet } from '../../utilities/dynamicHelmet'
 import { useSiteMetadata } from '../../hooks/useSiteMetadata'
-import { StyledTitle, StyledArticleBody } from './style'
+import { StyledSns, StyledTitle, StyledArticleBody } from './style'
 import { Base } from '../../components/layouts/Base'
+import { SnsShare } from '../../components/SnsShare'
 
 const Template = ({ location, data }) => {
   const { markdownRemark: post } = data
@@ -18,15 +19,32 @@ const Template = ({ location, data }) => {
     <Base pathname={location.pathname}>
       {DynamicHelmet({ title, baseTitle, description })}
 
-      <main>
-        <article>
-          <StyledTitle>{post.frontmatter.title}</StyledTitle>
-          <StyledArticleBody
-            // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{ __html: post.html }}
+      <article>
+        <StyledTitle>{post.frontmatter.title}</StyledTitle>
+
+        <StyledSns right>
+          <SnsShare
+            title={`${title} | ${baseTitle}`}
+            excerpt={post.excerpt}
+            baseUrl={meta.siteUrl}
+            pathname={location.pathname}
           />
-        </article>
-      </main>
+        </StyledSns>
+
+        <StyledArticleBody
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: post.html }}
+        />
+      </article>
+
+      <StyledSns>
+        <SnsShare
+          title={`${title} | ${baseTitle}`}
+          excerpt={post.excerpt}
+          baseUrl={meta.siteUrl}
+          pathname={location.pathname}
+        />
+      </StyledSns>
     </Base>
   )
 }

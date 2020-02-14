@@ -26,11 +26,11 @@ export const Head = ({ pathname }) => {
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:site" content={meta.social.twitter} />
       <link rel="canonical" href={`${meta.siteUrl}${pathname}`} />
-      <link rel="shortcut icon" href="favicon.ico" />
-      <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-      <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-      <link rel="icon" type="image/png" href="android-chrome-256x256.png" />
+      <link rel="shortcut icon" href="/ico/favicon.ico" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon-32x32.png" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/ico/favicon-16x16.png" />
+      <link rel="apple-touch-icon" href="/ico/apple-touch-icon.png" />
+      <link rel="icon" type="image/png" href="/ico/android-chrome-256x256.png" />
     </Helmet>
   )
 }

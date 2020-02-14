@@ -20,19 +20,17 @@ export default ({ location, data }) => {
     <Base pathname={location.pathname}>
       {DynamicHelmet({ title, baseTitle, description })}
 
-      <main>
-        <section>
-          <Heading underline>Update Information</Heading>
+      <section>
+        <Heading underline>更新情報一覧</Heading>
 
-          {posts.length ? (
-            posts
-              .filter(post => post.node.frontmatter.title.length > 0)
-              .map(({ node: post }) => <ArticleLink post={post} key={post.id} />)
-          ) : (
-            <Text>記事が一つもありません。</Text>
-          )}
-        </section>
-      </main>
+        {posts.length ? (
+          posts
+            .filter(post => post.node.frontmatter.title.length > 0)
+            .map(({ node: post }) => <ArticleLink post={post} key={post.id} />)
+        ) : (
+          <Text>記事が一つもありません。</Text>
+        )}
+      </section>
     </Base>
   )
 }

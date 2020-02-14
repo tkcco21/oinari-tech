@@ -2,6 +2,13 @@ import styled from 'styled-components'
 
 import { customMedia } from '../../media'
 
+export const StyledSns = styled.div`
+  display: flex;
+  justify-content: ${props => (props.right ? 'flex-end' : 'flex-start')};
+  margin-top: ${props => props.theme.space._16px};
+  font-size: 0;
+`
+
 export const StyledTitle = styled.h1`
   padding: ${props => props.theme.space._8px};
   font-weight: ${props => props.theme.font.weight.bold};
@@ -121,16 +128,16 @@ export const StyledArticleBody = styled.div`
     & > del {
       padding: 0 2px;
     }
-    & > code {
-      /* inline code */
-      &.language-text {
-        margin: 0 2px;
-        padding: 2px 5px;
-        font-size: 0.9em;
-        ${customMedia.lessThan('m')`
-          padding: 2px 4px;
-        `};
-      }
+  }
+  & code {
+    /* inline code */
+    &.language-text {
+      margin: 0 2px;
+      padding: 2px 5px;
+      font-size: 0.9em;
+      ${customMedia.lessThan('m')`
+        padding: 2px 4px;
+      `};
     }
   }
   & a {
