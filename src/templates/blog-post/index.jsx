@@ -11,9 +11,8 @@ import { SnsShare } from '../../components/SnsShare'
 const Template = ({ location, data }) => {
   const { markdownRemark: post } = data
   const meta = useSiteMetadata()
-  const { title } = post.frontmatter
+  const { title, excerpt: description } = post.frontmatter
   const baseTitle = meta.title
-  const description = post.excerpt
 
   return (
     <Base pathname={location.pathname}>
@@ -55,11 +54,11 @@ export const pageQuery = graphql`
   query BlogPostBySlug($path: String!) {
     markdownRemark(fields: { slug: { slugPath: { eq: $path } } }) {
       html
-      excerpt
       frontmatter {
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        excerpt
       }
     }
   }

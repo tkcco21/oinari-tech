@@ -43,11 +43,11 @@ export const query = graphql`
     ) {
       edges {
         node {
-          excerpt
           id
           frontmatter {
             title
             date(formatString: "MMMM DD, YYYY")
+            excerpt
           }
           fields {
             slug {

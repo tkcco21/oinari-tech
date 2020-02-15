@@ -64,7 +64,7 @@ export const ArticleLink = ({ post }) => (
     <StyledArticleLinkInner>
       <StyledArticleTitle>{post.frontmatter.title}</StyledArticleTitle>
       <StyledArticleDate>{post.frontmatter.date}</StyledArticleDate>
-      <StyledArticleExcerpt>{post.excerpt}</StyledArticleExcerpt>
+      <StyledArticleExcerpt>{post.frontmatter.excerpt}</StyledArticleExcerpt>
     </StyledArticleLinkInner>
   </StyledArticleLink>
 )
