@@ -49,7 +49,7 @@ export default ({ location }) => {
   const meta = useSiteMetadata()
   const title = 'このサイトについて'
   const baseTitle = meta.title
-  const description = 'MofMof Tech Blogについての説明ページです。'
+  const description = 'Oinari Tech Blogについての説明ページです。'
 
   return (
     <Base pathname={location.pathname}>

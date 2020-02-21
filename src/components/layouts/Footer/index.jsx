@@ -39,7 +39,7 @@ export const Footer = () => {
   return (
     <StyledFooter>
       <StyledFooterInner>
-        <StyledFooterText>© tkcco21</StyledFooterText>
+        <StyledFooterText>© おいなり (tkcco21)</StyledFooterText>
         <div>
           <StyledFooterSnsLink
             href="https://twitter.com/tkcco21"

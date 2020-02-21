@@ -1,4 +1,4 @@
-# mofmof
+# Oinari Tech
 
 Gatsby-starter-hello-worldリポジトリをもとにブログつくります。
 
