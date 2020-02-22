@@ -58,9 +58,7 @@ typings/
 .cache/
 public
 static/favicon.psd
-content/blog
-content/update-information
-content/weekly-report
+content/*
 
 # Mac files
 .DS_Store
