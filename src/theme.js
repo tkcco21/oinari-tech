@@ -46,9 +46,7 @@ const font = {
     },
   },
   weight: {
-    black: 900,
     bold: 700,
-    medium: 500,
     normal: 400,
   },
   space: {
