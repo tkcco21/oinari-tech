@@ -17,7 +17,7 @@ const StyledFooterInner = styled.div`
 const StyledFooterSnsLink = styled.a`
   margin-left: ${props => props.theme.space._12px};
   padding: ${props => props.theme.space._4px} ${props => props.theme.space._12px};
-  font-weight: ${props => props.theme.font.weight.medium};
+  font-weight: ${props => props.theme.font.weight.bold};
   font-size: ${props => props.theme.font.size.text.quaternary};
   background-color: ${props => props.theme.color.background.lighter};
   transition: 0.3s;
@@ -31,7 +31,7 @@ const StyledFooterSnsLink = styled.a`
 `
 const StyledFooterText = styled.p`
   color: ${props => props.theme.color.font.lightest};
-  font-weight: ${props => props.theme.font.weight.medium};
+  font-weight: ${props => props.theme.font.weight.bold};
   font-size: ${props => props.theme.font.size.text.tertiary};
 `
 

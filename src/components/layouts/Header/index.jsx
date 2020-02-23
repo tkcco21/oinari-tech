@@ -24,7 +24,7 @@ const StyledHeaderInner = styled.div`
 
 const StyledHeaderTitle = styled.h1`
   font-size: ${props => props.theme.font.size.heading.primary};
-  font-weight: ${props => props.theme.font.weight.black};
+  font-weight: ${props => props.theme.font.weight.bold};
   letter-spacing: ${props => props.theme.font.space.little};
 `
 const StyledHeaderText = styled.p`
