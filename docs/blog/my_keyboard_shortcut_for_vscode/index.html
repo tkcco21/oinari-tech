@@ -1,0 +1,716 @@
+<!DOCTYPE html><html lang="ja"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style data-href="/styles.538925339f0690339e03.css">a,abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;vertical-align:baseline;background:transparent}ul{list-style:none}a{text-decoration:none}button,input,select,textarea{margin:0;padding:0;font-family:inherit;background:none;border:none;border-radius:0;box-shadow:0 0 0 0;-webkit-appearance:none;-moz-appearance:none;appearance:none;vertical-align:top;&:focus{box-shadow:0 0 0 0}}select::-ms-expand{display:none}select:-moz-focusring{color:transparent;text-shadow:0 0 0 #000}input[type=number]{-moz-appearance:textfield}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}@font-face{font-family:Kinto Sans;src:url(/static/KintoSans-Bold-0bf8c755f96d864e7f7084e15b8dd993.woff2) format("woff2"),url(/static/KintoSans-Bold-396f8e9f583fc2a728aa0ff710ff9a06.woff) format("woff"),url(/static/KintoSans-Bold-0b947326596500543b799973f800005c.ttf) format("truetype");font-weight:700;font-style:normal}@font-face{font-family:Kinto Sans;src:url(/static/KintoSans-Regular-648618d0759328d336e4a1466e14cad6.woff2) format("woff2"),url(/static/KintoSans-Regular-ddd06300b878213ece3d08de00db1946.woff) format("woff"),url(/static/KintoSans-Regular-8f57a545552fc4ba3454d67725846246.ttf) format("truetype");font-weight:400;font-style:normal}// \---------------------------------------------- // Base // \---------------------------------------------- *,:after,:before{box-sizing:border-box}html{height:100%;font-size:10px}body{position:relative;font-weight:400;line-height:1.5;background-color:#f8f8f8;font-family:Kinto Sans,"\30D2\30E9\30AE\30CE\89D2\30B4   Pro W3",Hiragino Kaku Gothic Pro,"\30E1\30A4\30EA\30AA",Meiryo,Osaka,"\FF2D\FF33   \FF30\30B4\30B7\30C3\30AF",MS PGothic,sans-serif}a,body{color:#333}a{display:inline-block}img{max-width:100%;max-height:100%;vertical-align:bottom}hr{display:block;padding:0;height:1px;border:0;border-top:1px solid #ccc}table{border-collapse:collapse;border-spacing:0}input,select{vertical-align:middle}button,input,select{cursor:pointer}input[type=email],input[type=password],input[type=text]{cursor:auto}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}code[class*=language-],pre[class*=language-]{color:#ccc;background:none;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:1em;margin:.5em 0;overflow:auto}:not(pre)>code[class*=language-],pre[class*=language-]{background:#2d2d2d}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal}.token.block-comment,.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#999}.token.punctuation{color:#ccc}.token.attr-name,.token.deleted,.token.namespace,.token.tag{color:#e2777a}.token.function-name{color:#6196cc}.token.boolean,.token.function,.token.number{color:#f08d49}.token.class-name,.token.constant,.token.property,.token.symbol{color:#f8c555}.token.atrule,.token.builtin,.token.important,.token.keyword,.token.selector{color:#cc99cd}.token.attr-value,.token.char,.token.regex,.token.string,.token.variable{color:#7ec699}.token.entity,.token.operator,.token.url{color:#67cdcc}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}.token.inserted{color:green}</style><meta name="generator" content="Gatsby 2.19.7"/><style data-styled="" data-styled-version="5.0.0">.ZhzXx{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end;margin-top:16px;font-size:0;}
+.knzGmI{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;margin-top:16px;font-size:0;}
+data-styled.g1[id="style__StyledSns-sc-7e6qfq-0"]{content:"ZhzXx,knzGmI,"}
+.dEmJyn{padding:8px;font-weight:700;font-size:24px;-webkit-letter-spacing:0.02em;-moz-letter-spacing:0.02em;-ms-letter-spacing:0.02em;letter-spacing:0.02em;border:1px solid #d9d9d9;background-color:#f2f2f2;}
+@media (max-width:500px){.dEmJyn{font-size:20px;}}
+data-styled.g2[id="style__StyledTitle-sc-7e6qfq-1"]{content:"dEmJyn,"}
+.cPzxja{margin-top:20px;line-height:1.9;}
+@media (max-width:500px){.cPzxja{margin-top:12px;}}
+.cPzxja > h2:first-child,.cPzxja > p:first-child{margin-top:0;}
+.cPzxja > h2,.cPzxja > h3,.cPzxja > h4,.cPzxja > h5,.cPzxja > h6,.cPzxja > p,.cPzxja > img,.cPzxja > .gatsby-resp-image-wrapper,.cPzxja > table,.cPzxja > ul,.cPzxja > ol,.cPzxja > blockquote{margin-top:16px;font-size:16px;-webkit-letter-spacing:0.02em;-moz-letter-spacing:0.02em;-ms-letter-spacing:0.02em;letter-spacing:0.02em;}
+@media (max-width:500px){.cPzxja > h2,.cPzxja > h3,.cPzxja > h4,.cPzxja > h5,.cPzxja > h6,.cPzxja > p,.cPzxja > img,.cPzxja > .gatsby-resp-image-wrapper,.cPzxja > table,.cPzxja > ul,.cPzxja > ol,.cPzxja > blockquote{margin-top:8px;font-size:14px;}}
+.cPzxja > .gatsby-highlight{font-size:14px;}
+@media (max-width:500px){.cPzxja > .gatsby-highlight{margin:0 -8px;font-size:12px;}}
+.cPzxja > .gatsby-highlight > pre{padding:12px 16px;}
+@media (max-width:500px){.cPzxja > .gatsby-highlight > pre{padding:8px 12px;}}
+.cPzxja > h2{padding:4px 8px;font-weight:700;font-size:20px;border-left:5px solid #54b6e8;border-bottom:1px solid #54b6e8;background-color:#f2f2f2;}
+@media (max-width:500px){.cPzxja > h2{margin-top:16px;padding:4px;font-size:18px;}}
+.cPzxja > h3{padding:0 8px;font-weight:700;font-size:20px;border-left:3px solid #54b6e8;border-bottom:1px solid #d9d9d9;}
+@media (max-width:500px){.cPzxja > h3{padding-left:4px;font-size:18px;}}
+.cPzxja > h4{padding:4px 8px;font-weight:700;font-size:18px;border-bottom:1px solid #54b6e8;}
+@media (max-width:500px){.cPzxja > h4{padding:0 4px;font-size:16px;}}
+.cPzxja > h5{padding:4px 8px;font-weight:700;font-size:16px;border-bottom:1px solid #d9d9d9;}
+@media (max-width:500px){.cPzxja > h5{padding:0 4px;}}
+.cPzxja > p{font-size:16px;}
+@media (max-width:500px){.cPzxja > p{font-size:14px;}}
+.cPzxja > p > strong{padding:0 4px;font-weight:700;font-size:1.03em;-webkit-text-decoration:underline;text-decoration:underline;}
+.cPzxja > p > strong,.cPzxja > p > del{padding:0 2px;}
+.cPzxja code.language-text{margin:0 2px;padding:2px 5px;font-size:0.9em;}
+@media (max-width:500px){.cPzxja code.language-text{padding:2px 4px;}}
+.cPzxja a{color:#6ac2eb;-webkit-text-decoration:underline;text-decoration:underline;}
+.cPzxja a:hover{-webkit-text-decoration:none;text-decoration:none;}
+.cPzxja blockquote{font-size:14px;padding:4px;padding-left:8px;color:#707070;border-left:3px solid #d9d9d9;background-color:#f2f2f2;}
+@media (max-width:500px){.cPzxja blockquote{padding-left:8px;font-size:12px;}}
+.cPzxja > ul,.cPzxja > ol{list-style:inherit;padding-left:32px;}
+@media (max-width:500px){.cPzxja > ul,.cPzxja > ol{padding-left:24px;}}
+.cPzxja > ul ul,.cPzxja > ol ul{list-style:circle;}
+.cPzxja > ul ul,.cPzxja > ol ul,.cPzxja > ul ol,.cPzxja > ol ol{padding-left:16px;}
+@media (max-width:500px){.cPzxja > ul ul,.cPzxja > ol ul,.cPzxja > ul ol,.cPzxja > ol ol{padding-left:12px;}}
+.cPzxja > ol{list-style:decimal;}
+.cPzxja > table{width:100%;}
+.cPzxja > table th,.cPzxja > table td{padding:4px 8px;border:1px solid #d9d9d9;background-color:#f8f8f8;}
+@media (max-width:500px){.cPzxja > table th,.cPzxja > table td{padding:4px;}}
+.cPzxja > hr{margin:32px -4px;}
+data-styled.g3[id="style__StyledArticleBody-sc-7e6qfq-2"]{content:"cPzxja,"}
+.ksReBU{margin:0 auto;padding:0 24px;padding-top:32px;max-width:920px;width:85%;border-bottom:2px solid #d9d9d9;}
+@media (max-width:500px){.ksReBU{padding:0;padding-top:24px;width:95%;}}
+data-styled.g5[id="Header__StyledHeaderInner-sc-4o3jqr-1"]{content:"ksReBU,"}
+.dLLDgx{font-size:24px;font-weight:700;-webkit-letter-spacing:0.02em;-moz-letter-spacing:0.02em;-ms-letter-spacing:0.02em;letter-spacing:0.02em;}
+data-styled.g6[id="Header__StyledHeaderTitle-sc-4o3jqr-2"]{content:"dLLDgx,"}
+.ftpEtC{margin-top:8px;color:#a0a0a0;font-size:14px;-webkit-letter-spacing:0.02em;-moz-letter-spacing:0.02em;-ms-letter-spacing:0.02em;letter-spacing:0.02em;}
+data-styled.g7[id="Header__StyledHeaderText-sc-4o3jqr-3"]{content:"ftpEtC,"}
+.fhGeT{margin-top:24px;}
+@media (max-width:500px){.fhGeT{margin-top:20px;}}
+data-styled.g8[id="Header__StyledHeaderNavi-sc-4o3jqr-4"]{content:"fhGeT,"}
+.kCDOfw{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-bottom:-2px;}
+data-styled.g9[id="Header__StyledHeaderNaviList-sc-4o3jqr-5"]{content:"kCDOfw,"}
+.jYziDv{margin-left:12px;}
+.jYziDv:first-child{margin-left:0;}
+@media (max-width:500px){.jYziDv{margin-left:4px;}}
+data-styled.g10[id="Header__StyledHeaderNaviListItem-sc-4o3jqr-6"]{content:"jYziDv,"}
+.OnEKt{padding:4px 8px;color:#a0a0a0;font-size:14px;border-bottom:2px solid transparent;-webkit-transition:color 0.7s;transition:color 0.7s;}
+.OnEKt:hover{color:#333;}
+@media (max-width:500px){.OnEKt{padding:4px;font-size:12px;}}
+data-styled.g11[id="Header__StyledHeaderNaviListLink-sc-4o3jqr-7"]{content:"OnEKt,"}
+.iLQnqB{background-color:#072635;}
+data-styled.g12[id="Footer__StyledFooter-sc-194zpt0-0"]{content:"iLQnqB,"}
+.dHrqrD{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin:0 auto;padding:16px 8px;max-width:920px;width:85%;}
+data-styled.g13[id="Footer__StyledFooterInner-sc-194zpt0-1"]{content:"dHrqrD,"}
+.bpDzDD{margin-left:12px;padding:4px 12px;font-weight:700;font-size:12px;background-color:#f2f2f2;-webkit-transition:0.3s;transition:0.3s;}
+.bpDzDD:first-child{margin-left:0;}
+.bpDzDD:hover{color:#f5f6f8;background-color:#54b6e8;}
+data-styled.g14[id="Footer__StyledFooterSnsLink-sc-194zpt0-2"]{content:"bpDzDD,"}
+.fvxBNH{color:#f5f6f8;font-weight:700;font-size:14px;}
+data-styled.g15[id="Footer__StyledFooterText-sc-194zpt0-3"]{content:"fvxBNH,"}
+.jfQDac{margin:0 auto;padding:32px;padding-bottom:56px;max-width:920px;width:85%;}
+@media (max-width:500px){.jfQDac{padding:24px 0 32px;width:95%;}}
+data-styled.g16[id="Base__StyledMain-sc-138o9ar-0"]{content:"jfQDac,"}
+.leEKit{margin-left:4px;}
+.leEKit:first-child{margin-left:0;}
+data-styled.g17[id="SnsShare__StyledSns-ltvfsi-0"]{content:"leEKit,"}
+</style><title data-react-helmet="true">【Mac】VSCodeのキーボードショートカット設定してますか？僕の設定を全公開！ | Oinari Tech Blog</title><link data-react-helmet="true" rel="canonical" href="https://tech-blog.tkcco21.me/blog/my_keyboard_shortcut_for_vscode/"/><link data-react-helmet="true" rel="shortcut icon" href="/favicon/favicon.ico"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png"/><link data-react-helmet="true" rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png"/><link data-react-helmet="true" rel="apple-touch-icon" href="/favicon/apple-touch-icon.png"/><link data-react-helmet="true" rel="icon" type="image/png" href="/favicon/android-chrome-256x256.png"/><meta data-react-helmet="true" charSet="UTF-8"/><meta data-react-helmet="true" name="viewport" content="width=device-width,initial-scale=1"/><meta data-react-helmet="true" http-equiv="X-UA-Compatible" content="ie=edge"/><meta data-react-helmet="true" name="description" content="プログラミングとか、日々の技術的アウトプットをするためのブログ"/><meta data-react-helmet="true" property="og:url" content="https://tech-blog.tkcco21.me/blog/my_keyboard_shortcut_for_vscode/"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" property="og:site_name" content="Oinari Tech Blog"/><meta data-react-helmet="true" property="og:image" content="https://tech-blog.tkcco21.me/ogp.png"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:site" content="@tkcco21"/><meta data-react-helmet="true" property="og:title" content="【Mac】VSCodeのキーボードショートカット設定してますか？僕の設定を全公開！ | Oinari Tech Blog"/><meta data-react-helmet="true" property="description" content="作業効率を上げるために重要なVSCodeのキーボードショートカットについて、設定の仕方と僕の設定の解説をします。"/><meta data-react-helmet="true" property="og:description" content="作業効率を上げるために重要なVSCodeのキーボードショートカットについて、設定の仕方と僕の設定の解説をします。"/><link as="script" rel="preload" href="/component---src-templates-blog-post-index-jsx-4b1bbd23b6200f03e3f7.js"/><link as="script" rel="preload" href="/commons-9c7cf1fc31d113b042b1.js"/><link as="script" rel="preload" href="/app-81c659121c063d9f28a7.js"/><link as="script" rel="preload" href="/styles-c912f09ff5fbb2e6c2c4.js"/><link as="script" rel="preload" href="/webpack-runtime-7ac4f9e9ac436d474816.js"/><link as="fetch" rel="preload" href="/page-data/blog/my_keyboard_shortcut_for_vscode/page-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" role="group" id="gatsby-focus-wrapper"><header class="Header__StyledHeader-sc-4o3jqr-0 hiQAwZ"><div class="Header__StyledHeaderInner-sc-4o3jqr-1 ksReBU"><div><h1 class="Header__StyledHeaderTitle-sc-4o3jqr-2 dLLDgx">Oinari Tech Blog</h1><p class="Header__StyledHeaderText-sc-4o3jqr-3 ftpEtC">プログラミングとか、日々の技術的アウトプットをするためのブログ</p></div><nav class="Header__StyledHeaderNavi-sc-4o3jqr-4 fhGeT"><ul class="Header__StyledHeaderNaviList-sc-4o3jqr-5 kCDOfw"><li class="Header__StyledHeaderNaviListItem-sc-4o3jqr-6 jYziDv"><a class="Header__StyledHeaderNaviListLink-sc-4o3jqr-7 OnEKt" style="color:#333;border-bottom:2px solid #54b6e8" href="/">Home</a></li><li class="Header__StyledHeaderNaviListItem-sc-4o3jqr-6 jYziDv"><a class="Header__StyledHeaderNaviListLink-sc-4o3jqr-7 OnEKt" href="/weekly-report/">Weekly Report</a></li><li class="Header__StyledHeaderNaviListItem-sc-4o3jqr-6 jYziDv"><a class="Header__StyledHeaderNaviListLink-sc-4o3jqr-7 OnEKt" href="/update-information/">Update Information</a></li><li class="Header__StyledHeaderNaviListItem-sc-4o3jqr-6 jYziDv"><a class="Header__StyledHeaderNaviListLink-sc-4o3jqr-7 OnEKt" href="/about/">About</a></li></ul></nav></div></header><main class="Base__StyledMain-sc-138o9ar-0 jfQDac"><article><h1 class="style__StyledTitle-sc-7e6qfq-1 dEmJyn">【Mac】VSCodeのキーボードショートカット設定してますか？僕の設定を全公開！</h1><div class="style__StyledSns-sc-7e6qfq-0 ZhzXx"><p class="SnsShare__StyledSns-ltvfsi-0 leEKit"><button title="【Mac】VSCodeのキーボードショートカット設定してますか？僕の設定を全公開！ | Oinari Tech Blog" aria-label="twitter" class="react-share__ShareButton" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer"><svg viewBox="0 0 64 64" width="36" height="36"><circle cx="32" cy="32" r="31" fill="#00aced"></circle><path d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z" fill="white"></path></svg></button></p><p class="SnsShare__StyledSns-ltvfsi-0 leEKit"><button aria-label="facebook" class="react-share__ShareButton" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer"><svg viewBox="0 0 64 64" width="36" height="36"><circle cx="32" cy="32" r="31" fill="#3b5998"></circle><path d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z" fill="white"></path></svg></button></p><p class="SnsShare__StyledSns-ltvfsi-0 leEKit"><button aria-label="line" class="react-share__ShareButton" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer"><svg viewBox="0 0 64 64" width="36" height="36"><circle cx="32" cy="32" r="31" fill="#00b800"></circle><path d="M52.62 30.138c0 3.693-1.432 7.019-4.42 10.296h.001c-4.326 4.979-14 11.044-16.201 11.972-2.2.927-1.876-.591-1.786-1.112l.294-1.765c.069-.527.142-1.343-.066-1.865-.232-.574-1.146-.872-1.817-1.016-9.909-1.31-17.245-8.238-17.245-16.51 0-9.226 9.251-16.733 20.62-16.733 11.37 0 20.62 7.507 20.62 16.733zM27.81 25.68h-1.446a.402.402 0 0 0-.402.401v8.985c0 .221.18.4.402.4h1.446a.401.401 0 0 0 .402-.4v-8.985a.402.402 0 0 0-.402-.401zm9.956 0H36.32a.402.402 0 0 0-.402.401v5.338L31.8 25.858a.39.39 0 0 0-.031-.04l-.002-.003-.024-.025-.008-.007a.313.313 0 0 0-.032-.026.255.255 0 0 1-.021-.014l-.012-.007-.021-.012-.013-.006-.023-.01-.013-.005-.024-.008-.014-.003-.023-.005-.017-.002-.021-.003-.021-.002h-1.46a.402.402 0 0 0-.402.401v8.985c0 .221.18.4.402.4h1.446a.401.401 0 0 0 .402-.4v-5.337l4.123 5.568c.028.04.063.072.101.099l.004.003a.236.236 0 0 0 .025.015l.012.006.019.01a.154.154 0 0 1 .019.008l.012.004.028.01.005.001a.442.442 0 0 0 .104.013h1.446a.4.4 0 0 0 .401-.4v-8.985a.402.402 0 0 0-.401-.401zm-13.442 7.537h-3.93v-7.136a.401.401 0 0 0-.401-.401h-1.447a.4.4 0 0 0-.401.401v8.984a.392.392 0 0 0 .123.29c.072.068.17.111.278.111h5.778a.4.4 0 0 0 .401-.401v-1.447a.401.401 0 0 0-.401-.401zm21.429-5.287c.222 0 .401-.18.401-.402v-1.446a.401.401 0 0 0-.401-.402h-5.778a.398.398 0 0 0-.279.113l-.005.004-.006.008a.397.397 0 0 0-.111.276v8.984c0 .108.043.206.112.278l.005.006a.401.401 0 0 0 .284.117h5.778a.4.4 0 0 0 .401-.401v-1.447a.401.401 0 0 0-.401-.401h-3.93v-1.519h3.93c.222 0 .401-.18.401-.402V29.85a.401.401 0 0 0-.401-.402h-3.93V27.93h3.93z" fill="white"></path></svg></button></p><p class="SnsShare__StyledSns-ltvfsi-0 leEKit"><button aria-label="pocket" class="react-share__ShareButton" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer"><svg viewBox="0 0 64 64" width="36" height="36"><circle cx="32" cy="32" r="31" fill="#EF3F56"></circle><path d="M41.084 29.065l-7.528 7.882a2.104 2.104 0 0 1-1.521.666 2.106 2.106 0 0 1-1.522-.666l-7.528-7.882c-.876-.914-.902-2.43-.065-3.384.84-.955 2.228-.987 3.1-.072l6.015 6.286 6.022-6.286c.88-.918 2.263-.883 3.102.071.841.938.82 2.465-.06 3.383l-.015.002zm6.777-10.976C47.463 16.84 46.361 16 45.14 16H18.905c-1.2 0-2.289.82-2.716 2.044-.125.363-.189.743-.189 1.125v10.539l.112 2.096c.464 4.766 2.73 8.933 6.243 11.838.06.053.125.102.19.153l.04.033c1.882 1.499 3.986 2.514 6.259 3.014a14.662 14.662 0 0 0 6.13.052c.118-.042.235-.065.353-.087.03 0 .065-.022.098-.042a15.395 15.395 0 0 0 6.011-2.945l.039-.045.18-.153c3.502-2.902 5.765-7.072 6.248-11.852L48 29.674v-10.52c0-.366-.041-.728-.161-1.08l.022.015z" fill="white"></path></svg></button></p></div><div class="style__StyledArticleBody-sc-7e6qfq-2 cPzxja"><p>どうも、フロントエンドエンジニアの<strong>おいなり</strong>です。</p>
+<p>今回はテキストエディタのVSCodeのキーボードショートカットについての記事になります。</p>
+<p>最近、無料のテキストエディタであればVSCodeの一択のような気がします（自分の周りだけか）。</p>
+<p>かくいう僕も、これまでSublime Textから入り、atomを使い、Emacsに移って、さらにatomに戻ってきた、という経緯があります。その後、よく聞くようになっていたVSCodeに完全に移行してしまいました。</p>
+<h2>キーボードショートカットに興味を持った理由</h2>
+<p>僕がキーボードショートカットに興味を持った理由として、Emacsを使っていたということが挙げられます。</p>
+<p>数年前の職場の先輩がEmacsを使っているのを見て、「<strong>めちゃめちゃかっこいい！！</strong>」と思い僕も使い始めました。よかったらみなさんもぜひ一度インストールして使ってみてください。<br>
+『<a href="https://www.gnu.org/software/emacs/" target="_blank" rel="noopener noreferrer">GNU Emacs</a>』</p>
+<p>このEmacsというものは結構な曲者で、基本的に左側にツリー構造の表示もなければ、ワークスペース的な概念もありません。<br>
+キーバインド（キーボードショートカット）を駆使しなければ、ほぼ使い物になりません。</p>
+<p>そんな経緯がありEmacsを使い始め、嫌でもキーボードショートカットを使わなければならず、そこからキーボードショートカットに興味を持つようになりました。</p>
+<h2>キーボードショートカットの確認</h2>
+<p>VSCodeを開いて、「<strong>shift + cmd + p</strong>」を押してください。
+そうすると下記のようにコマンド入力の表示がVSCodeの画面上部に表示されます。日本語表示にしている方は日本語で表示されているはずです。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 602px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/39a09cf4d10f9f1938b22b627eb535e3/32056/01.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 72.42524916943522%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsSAAALEgHS3X78AAACCklEQVQ4y31S2Y6bQBDkA6IcylvyspjTwADmGFjb2ByGeCNtlGRz/P+X1Ha3YwvvWnkoTXF0dXX1GElRIy1rJIWmsxKsdP0KWXWPnFDU6yvk8r5GUdVSa5ibR6jpL5bDb4TjHzp/wW1/wNl/F3jEze03BMMTPldf8Sbq8C7uBW9Vh/erB3ysnvBB/8Sn+hFGTt333QHdMKLtR+zaHjl1ysixSjO4fgh3GcIj2F6AO9uHeYEH0w2w8JTA8kIYdVVhGAa0+xbTOKFpGuhSC2IVY7Gw4NgObNuW03Wu4VgL2AsTtnlH3IJR0exd12O328vp+UsRsSybRKjI9eA4/yDcRRgpaK2R8ATJGsFqg0gP8KOMHNb3GEcat+1wOIyI44SKHClk2OLuGvze8/xTM4okTnPkmoRDxYK1CDXNDtttQ+ITsiwXh2fRl7hqQP/FSkGpCD41MTRlyKNut1sRTZJUfpwLnl3N+TmOMIwQUQQMdn1xyKKMkpbBouySC26JnTkLZFmGNF3RDnYUV3xayjR9wZ62zJyXw077fsB6vbm4nTubc16gT4vk7MVhWZayEO7CtvkDn4quDPPlMkAQBK8czp+5licSwUoyPG2YcTw+UIOW+IH4URzzz//Lcu7a0LoShzwiZ8jjswhfduYs/lLgVqbnZ6MoSgmUM2SwEF8f5tyIxXmTL4tvCTKeAfo4s0JdK4SAAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="コマンド入力画面の表示"
+        title="コマンド入力画面の表示"
+        src="/static/39a09cf4d10f9f1938b22b627eb535e3/32056/01.png"
+        srcset="/static/39a09cf4d10f9f1938b22b627eb535e3/4dcb9/01.png 188w,
+/static/39a09cf4d10f9f1938b22b627eb535e3/5ff7e/01.png 375w,
+/static/39a09cf4d10f9f1938b22b627eb535e3/32056/01.png 602w"
+        sizes="(max-width: 602px) 100vw, 602px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>そこに「keyboard」と入力します。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 600px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/c5327ca87f08c97f9b854d559577022f/0a47e/02.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 21.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsSAAALEgHS3X78AAAA8klEQVQY0zWOWU7CUABFuwPDsADNG9rXgUKxtaVYhhYQChrREIyJ7n8Vx2eNHycn9/7c64jqhbj9QjYf6PpC0Lx3Hi6/GVaf6NUZtXzFW79xWz7TG2/oJ1sGyY7+ZMNNcmSQX+gXV3rTE06aPTBd7LgrWsbVntmiJn2sKeoD6XyN60dIbXBNiHR9osl9RzzNiJIUkzWYtCaYtei4wJkVBce2ZdvUPG03iOrMsLySrQ6c9jvKck6e52ilkEKi5B9SiK6bxCNGYWAd4RuDo7WL59kHFs/4SC+wTwKb/a43tgvDCKU0UurO//xmYUeEUJ2lVPwAJdd+fTJQKOgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="コマンド入力画面で「keyboard」と入力"
+        title="コマンド入力画面で「keyboard」と入力"
+        src="/static/c5327ca87f08c97f9b854d559577022f/0a47e/02.png"
+        srcset="/static/c5327ca87f08c97f9b854d559577022f/4dcb9/02.png 188w,
+/static/c5327ca87f08c97f9b854d559577022f/5ff7e/02.png 375w,
+/static/c5327ca87f08c97f9b854d559577022f/0a47e/02.png 600w"
+        sizes="(max-width: 600px) 100vw, 600px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>この中にある「<strong>Open Default Keyboard Shortcuts (JSON)</strong>」がデフォルトのショートカットの設定で、「<strong>Open Keyboard Shortcuts (JSON)</strong>」が自分で設定するものになります。</p>
+<p>下記のように左側にデフォルトの設定ファイル、右側に自分の設定ファイルを開くとわかりやすいです。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 750px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/857b0542ca94f4854a8e6543b4383993/d004c/03.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 44.816883923029174%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsSAAALEgHS3X78AAABiklEQVQoz0WS6XKDMAyE8y6Nb4w5DZm2gRx9/0farkQy+eHxIEurTytOw9BhmkaUktG2n5NzRtf1GIYe45hxuay4/v7ye+D3iJH30LN2lNqi+W1bcEox8jEw0TMQsF099t1QwDDpzGKH7++IFBPmsaDvMkrboM0NcsPDO4aotaULODUpkTCSxvPR4353uF4NajVMspjngHVtEFi0LGw+WsYNUrJwzumx1qlg33sKNiJI9RLQNAG3PeDxODPmGLO8E2kTIgmXGtlIYiLq2MTDe6+iIihQJ0GXxGWx7B6wbwF/f1+4rB7GOHYNHDnpyHWOJLa0x3IaRzGngkKYcyRApCD9OMYyPOJfwPP5xbFJwGQhVw9pTa1vQcO440SOcfcSDEpJwsyEqOYPXM6mhGcSByUUwZ+fBLGmvkYWQSHM2dKKj2BRQf4i68qlsFCC95unh0a7vUfetqSEspTDmoNQBMVHXQpH7vt4ENZ64Irg7UYfd6sJb8J9jwfhfAhOk+ECrI7r3LGUzIXK+QckJRX3U0fzewAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="デフォルトの設定ファイルと自分の設定ファイルを開く"
+        title="デフォルトの設定ファイルと自分の設定ファイルを開く"
+        src="/static/857b0542ca94f4854a8e6543b4383993/1d69c/03.png"
+        srcset="/static/857b0542ca94f4854a8e6543b4383993/4dcb9/03.png 188w,
+/static/857b0542ca94f4854a8e6543b4383993/5ff7e/03.png 375w,
+/static/857b0542ca94f4854a8e6543b4383993/1d69c/03.png 750w,
+/static/857b0542ca94f4854a8e6543b4383993/78797/03.png 1125w,
+/static/857b0542ca94f4854a8e6543b4383993/aa440/03.png 1500w,
+/static/857b0542ca94f4854a8e6543b4383993/d004c/03.png 1611w"
+        sizes="(max-width: 750px) 100vw, 750px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>ショートカットの基本はこのような書き方になります。</p>
+<ul>
+<li><code class="language-text">//</code>でコメントを残せる</li>
+<li><code class="language-text">key</code>の部分にキーの組み合わせを入力（例：shift + cmd + u、<code class="language-text">\</code>は記号のエスケープに使用）</li>
+<li><code class="language-text">command</code>はキーが押されたときに実行されるものの指定</li>
+<li><code class="language-text">when</code>はそのコマンドが有効になるときの指定（指定なしの場合はいつも有効）</li>
+</ul>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token punctuation">{</span>
+  <span class="token comment">// エディタの分割</span>
+  <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+\\"</span><span class="token punctuation">,</span>
+  <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"workbench.action.splitEditor"</span><span class="token punctuation">,</span>
+  <span class="token comment">// </span><span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">""</span>  そのコマンドが有効になるとき
+<span class="token punctuation">}</span><span class="token punctuation">,</span></code></pre></div>
+<p>では、試しに↑のショートカットを設定して使ってみましょう。</p>
+<h3>早速設定して使ってみよう</h3>
+<p>前述で右側に開いた自分の設定ファイルを下記のように変更してください。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 686px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/0a0ca9bebc1a43219ec3d164803f3ede/f6386/04.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 23.46938775510204%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsSAAALEgHS3X78AAAA3klEQVQY032P226EMBBD+ZiSe8IlCyRA2KVbVe3/f5BrQFq1L3048owtJeMqxoiyLvh4PrA/NmzrjCUnZHLfCtZlprcgpwlpGk+dU0s/M9+QuLdNh1scEUJA5Zyl4WGMgjWaqs9ZawUlBSQ5diUlhBBQSsJaA62u/K2uUQtCPfLKe4dx6DHEDuOtQ0kRQ9/zQQNn3Yk19lTPzw+cta/ZO/cLywsZ5qnH95fBc2/wuXu83+klw+oXpWhMg0fwHg0PaF7q6P2lCsGj7QKr1GcdqQS0qYm40Eflq6oQRP7PD6upmlKRIguRAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="自分の設定ファイルに入力"
+        title="自分の設定ファイルに入力"
+        src="/static/0a0ca9bebc1a43219ec3d164803f3ede/f6386/04.png"
+        srcset="/static/0a0ca9bebc1a43219ec3d164803f3ede/4dcb9/04.png 188w,
+/static/0a0ca9bebc1a43219ec3d164803f3ede/5ff7e/04.png 375w,
+/static/0a0ca9bebc1a43219ec3d164803f3ede/f6386/04.png 686w"
+        sizes="(max-width: 686px) 100vw, 686px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<p>変更したら保存しましょう。<br>
+たったこれだけです。</p>
+<p>これで自分で設定したキーボードショートカットが使えるようになりました。<br>
+「ctrl」キーを押しながら「\」を押すと、画面が分割されたはずです！</p>
+<p>このようにして、自分でどんどん設定していくことが可能です。</p>
+<p>デフォルトの設定を自分の使いやすいショートカットに上書きすることも、デフォルトには存在しないショートカットを設定することも可能です。</p>
+<p>デフォルトのキーボードショートカットの設定ファイルの下のほうに、下記のような記述がされています。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto;  max-width: 750px;"
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/56df78d12a0f0d44d367d6f31488f825/7de01/05.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 58.816120906801004%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsSAAALEgHS3X78AAAB00lEQVQoz4WS2ZLaMBBF+ZWBWLJkbV6wMV4BTzJLSJH//5iblgSESWWSh1sSyDp1Wt0raw2KXKIsJYpCQghBSSGlxDAyHCaJcUgoa0zzBtO0wXxI0O44fceRpimqKsPlwtHsDFZaK1grkDsB58RvoJDoOgKOKcaOgN0G47jGPH/BMBCkjDCfkkTOPzj2ncLKG+besMjCKgkYQobTxPD1JHEio8O0xum0xvLsV45tFQ05T0N1b28p6jojoNHBrihixBUoyHCaEzwfOY5ktcxrfHt5wrIk6HsOY8jwCvSg9+8CTUNAQ0DnZHjH3MlQqpTRcKQ3XA6C7BIcJ2/3hJms+55RNeyD4fnMCawikHMOxuLh7V38PlMcuWVwhgAU5xi0lnR+a0i8k+cCl58JGeoIVJkMycgsk3GvVQZNYMb+CI+QmAdDasquDU2x2JYOw36LpsrDvips2FsC+0vRml+T3tfbmR+b8zklQw801GWnaSxq9G0FZ/X9Q/5w6W+5nRV5htcXWotQsoE1imBbtHWJflcFSz+Ld/AnUP+/n4ptmYfSfbXR0EbDjmBaZzA07H50/mX3COzbOvxW2ndZ+zk0GMhw35ShGUnCPtj9z3DomrAqpfALpFpxRdGxiuoAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="デフォルトの設定ファイルに設定できるコマンドが書かれている"
+        title="デフォルトの設定ファイルに設定できるコマンドが書かれている"
+        src="/static/56df78d12a0f0d44d367d6f31488f825/1d69c/05.png"
+        srcset="/static/56df78d12a0f0d44d367d6f31488f825/4dcb9/05.png 188w,
+/static/56df78d12a0f0d44d367d6f31488f825/5ff7e/05.png 375w,
+/static/56df78d12a0f0d44d367d6f31488f825/1d69c/05.png 750w,
+/static/56df78d12a0f0d44d367d6f31488f825/7de01/05.png 794w"
+        sizes="(max-width: 750px) 100vw, 750px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
+<div class="gatsby-highlight" data-language="text"><pre class="language-text"><code class="language-text">// Here are other available commands: </code></pre></div>
+<p>これより下はデフォルトでは定義されていないが、設定が可能なものが書かれているのでそこを参考にしてみましょう。</p>
+<h2>まとめ</h2>
+<p>かなり簡潔に書いてしまいましたが、設定すること自体は本当に簡単です。</p>
+<p>デフォルトで設定されていても自分で設定しても、使わなければ意味がありません。数種類使いこなせるようになったら、さらに数種類使えるようにすることを意識してみましょう。</p>
+<p>キーボードショートカットを使いこなせるようになれば、マウスや方向キーなど<strong>ホームポジションから移動せざるを得ない動作を減らすことが可能</strong>です。<br>
+そうなると確実に作業は早くなり作業効率が上がるはずなので、使いこなせるようにしていきましょう。</p>
+<p>最後に僕が設定している、キーボードショートカットを載せておきますので参考にしていただければと思います。</p>
+<p>ちなみに、noteでも下記のように、それっぽいことを書いてます。</p>
+<iframe class="note-embed" src="https://note.com/embed/notes/nb7e22c90d742" style="border: 0; display: block; max-width: 99%; width: 494px; padding: 0px; margin: 10px 0px; position: static; visibility: visible;" height="400"></iframe><script async src="https://note.com/scripts/embed.js" charset="utf-8"></script>
+<h2>僕のショートカットキーの全て</h2>
+<p>結構長いです。また、Emacsを使っていたときのものを踏襲していることが多いので、このまま流用すると慣れるまで大変だと思うのでおすすめはできません。。。</p>
+<div class="gatsby-highlight" data-language="json"><pre class="language-json"><code class="language-json"><span class="token comment">// 既定値を上書きするには、このファイル内にキー バインドを挿入します</span>
+<span class="token punctuation">[</span>
+  <span class="token comment">// ------------------------------------------------------</span>
+  <span class="token comment">// 取り消し系</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+g"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"-workbench.action.gotoLine"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+g"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"closeParameterHints"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorFocus &amp;&amp; parameterHintsVisible"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+g"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"closeFindWidget"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorFocus &amp;&amp; findWidgetVisible"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+g"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"closeReferenceSearchEditor"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"inReferenceSearchEditor &amp;&amp; !config.editor.stablePeek"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+g"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"closeReferenceSearch"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"referenceSearchVisible &amp;&amp; !config.editor.stablePeek"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+g"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"removeSecondaryCursors"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorHasMultipleSelections &amp;&amp; editorTextFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+g"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"closeBreakpointWidget"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"breakpointWidgetVisible &amp;&amp; editorFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+g"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"leaveSnippet"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorTextFocus &amp;&amp; inSnippetMode"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+g"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"closeMarkersNavigation"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorFocus &amp;&amp; markersNavigationVisible"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+g"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"closeParameterHints"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorTextFocus &amp;&amp; parameterHintsVisible"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+g"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"hideSuggestWidget"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorTextFocus &amp;&amp; suggestWidgetVisible"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+g"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"cancelRenameInput"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorFocus &amp;&amp; renameInputVisible"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+g"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"closeAccessibilityHelp"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"accessibilityHelpWidgetVisible &amp;&amp; editorFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+g"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"closeReplaceInFilesWidget"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"replaceInputBoxFocus &amp;&amp; searchViewletVisible"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+g"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"workbench.action.closeQuickOpen"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"inQuickOpen"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+g"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"search.action.cancel"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"listFocus &amp;&amp; searchViewletVisible &amp;&amp; !inputFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+g"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"cancelSelection"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorHasSelection &amp;&amp; textInputFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 取り消し系</span>
+  <span class="token comment">// ------------------------------------------------------</span>
+
+  <span class="token comment">// ------------------------------------------------------</span>
+  <span class="token comment">// 画面操作</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// エディタの分割</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+\\"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"workbench.action.splitEditor"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// フォーカスしてるエディタの切換（次）</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+o"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"workbench.action.focusNextGroup"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// サイドバーにフォーカス</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+0"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"workbench.action.focusSideBar"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// エディタにフォーカス</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+cmd+0"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"workbench.action.focusActiveEditorGroup"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// サイドバーメニュー（一番左）の下移動</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+u"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"workbench.action.nextSideBarView"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// サイドバーメニュー（一番左）の上移動</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+cmd+u"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"workbench.action.previousSideBarView"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// 検索</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+s"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"actions.find"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"!findWidgetVisible"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">//  先のものの検索</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+s"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"editor.action.nextMatchFindAction"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"findWidgetVisible"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// 検索</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+r"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"actions.find"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"!findWidgetVisible"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// さかのぼって検索</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+r"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"editor.action.previousMatchFindAction"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"findWidgetVisible"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// パネル（タブはprobleems）の開閉</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"cmd+j"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"workbench.action.tasks.toggleProblems"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"textInputFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// ホバーして確認できるツールチップとかの表示</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"cmd+i"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"editor.action.showHover"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorTextFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 画面操作</span>
+  <span class="token comment">// ------------------------------------------------------</span>
+
+  <span class="token comment">// ------------------------------------------------------</span>
+  <span class="token comment">// undo / redo</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+z"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"undo"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"textInputFocus &amp;&amp; !editorReadonly"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+z"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"editor.action.webvieweditor.undo"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"!editorFocus &amp;&amp; !inputFocus &amp;&amp; activeEditor == 'WebviewEditor'"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+/"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"redo"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"textInputFocus &amp;&amp; !editorReadonly"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+/"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"editor.action.webvieweditor.redo"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"!editorFocus &amp;&amp; !inputFocus &amp;&amp; activeEditor == 'WebviewEditor'"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// undo / redo</span>
+  <span class="token comment">// ------------------------------------------------------</span>
+
+  <span class="token comment">// ------------------------------------------------------</span>
+  <span class="token comment">// 移動（右・左・上・下・文末への移動はデフォルトでついてる）</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// 文頭</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+a"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"cursorHome"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"textInputFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// 一番上</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+shift+."</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"cursorBottom"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"textInputFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// 一番下</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+shift+,"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"cursorTop"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"textInputFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// 1単語右</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"alt+f"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"cursorWordRight"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorTextFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// 1単語左</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"alt+b"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"cursorWordLeft"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorTextFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// ページ送り下</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+v"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"cursorPageDown"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"textInputFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// ページ送り上</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"alt+v"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"cursorPageUp"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"textInputFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// カーソルの位置はそのままで1行下にスクロール</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+l"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"scrollLineDown"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"textInputFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// カーソルの位置はそのままで1行上にスクロール</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+cmd+l"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"scrollLineUp"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"textInputFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// 上にカーソル追加</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+cmd+p"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"editor.action.insertCursorAbove"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorTextFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// 下にカーソル追加</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+cmd+n"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"editor.action.insertCursorBelow"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorTextFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 移動（右・左・上・下・文末への移動はデフォルトでついてる）</span>
+  <span class="token comment">// ------------------------------------------------------</span>
+
+  <span class="token comment">// ------------------------------------------------------</span>
+  <span class="token comment">// 選択系</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// いい感じに選択してくれる</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+shift+x"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"editor.action.smartSelect.expand"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorTextFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// いい感じに選択してくれたやつをいい感じに縮めてくれる</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+shift+s"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"editor.action.smartSelect.shrink"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorTextFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// 右1文字選択</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+shift+f"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"cursorRightSelect"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorTextFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// 左1文字選択</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+shift+b"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"cursorLeftSelect"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorTextFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// 1単語右選択</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"alt+shift+f"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"cursorWordRightSelect"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorTextFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// 1単語左選択</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"alt+shift+b"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"cursorWordLeftSelect"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorTextFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// カーソルから下の行の選択</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+shift+n"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"cursorDownSelect"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorTextFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// カーソルから下の行の選択</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+shift+p"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"cursorUpSelect"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorTextFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// カーソルから文頭まで選択</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+shift+a"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"cursorHomeSelect"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorTextFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// カーソルから文末まで選択</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+shift+e"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"cursorEndSelect"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorTextFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// 選択系</span>
+  <span class="token comment">// ------------------------------------------------------</span>
+
+  <span class="token comment">// ------------------------------------------------------</span>
+  <span class="token comment">// マークダウン（プラグインのMarkdown all in oneも含め）</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+shift+m"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"-editor.action.toggleTabFocusMode"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+shift+m"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"markdown.showPreviewToSide"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorLangId == 'markdown'"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"shift+cmd+v"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"-markdown.showPreview"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"!editorLangId == 'markdown'"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"cmd+k v"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"-markdown.showPreviewToSide"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"!editorLangId == 'markdown'"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"cmd+m"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"-markdown.extension.editing.toggleMath"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"editorTextFocus &amp;&amp; !editorReadonly &amp;&amp; editorLangId == 'markdown'"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// マークダウン（プラグインのMarkdown all in oneも含め）</span>
+  <span class="token comment">// ------------------------------------------------------</span>
+
+  <span class="token comment">// ------------------------------------------------------</span>
+  <span class="token comment">// ファイル操作</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// 最近開いたもの検索</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+x ctrl+f"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"workbench.action.quickOpen"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// ツリービューから開く</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"enter"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"macros.openFileAndKeep"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"explorerViewletFocus &amp;&amp; explorerViewletVisible &amp;&amp; !inputFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// ツリービューから開く</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+m"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"macros.openFileAndKeep"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"explorerViewletFocus &amp;&amp; explorerViewletVisible &amp;&amp; !inputFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// ツリービューで名前変更</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"alt+r"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"renameFile"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"explorerViewletVisible &amp;&amp; filesExplorerFocus &amp;&amp; !explorerResourceIsRoot &amp;&amp; !explorerResourceReadonly &amp;&amp; !inputFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// ツリービューでファイル作成</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"cmd+n"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"explorer.newFile"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"explorerViewletFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// ツリービューのフォルダを閉じる</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+b"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"list.collapse"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"listFocus &amp;&amp; !inputFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// ツリービューのフォルダを開ける</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+f"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"list.expand"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"listFocus &amp;&amp; !inputFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// 何かを閉じる（何だろ？）</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+b"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"notification.collapse"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"notificationFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token comment">// 何かを開ける（何だろ？）</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+f"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"notification.expand"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"notificationFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// ファイル操作</span>
+  <span class="token comment">// ------------------------------------------------------</span>
+
+  <span class="token comment">// ------------------------------------------------------</span>
+  <span class="token comment">// 候補の中からctrl+mで選択</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+m"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"acceptSelectedSuggestion"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"suggestWidgetVisible &amp;&amp; textInputFocus"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token comment">// ------------------------------------------------------</span>
+  <span class="token comment">// debugger</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+shift+d"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"workbench.action.debug.start"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"!inDebugMode"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+shift+d"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"workbench.action.debug.continue"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"inDebugMode"</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">{</span>
+    <span class="token property">"key"</span><span class="token operator">:</span> <span class="token string">"ctrl+shift+cmd+d"</span><span class="token punctuation">,</span>
+    <span class="token property">"command"</span><span class="token operator">:</span> <span class="token string">"workbench.action.debug.stop"</span><span class="token punctuation">,</span>
+    <span class="token property">"when"</span><span class="token operator">:</span> <span class="token string">"inDebugMode"</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span></code></pre></div></div></article><div class="style__StyledSns-sc-7e6qfq-0 knzGmI"><p class="SnsShare__StyledSns-ltvfsi-0 leEKit"><button title="【Mac】VSCodeのキーボードショートカット設定してますか？僕の設定を全公開！ | Oinari Tech Blog" aria-label="twitter" class="react-share__ShareButton" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer"><svg viewBox="0 0 64 64" width="36" height="36"><circle cx="32" cy="32" r="31" fill="#00aced"></circle><path d="M48,22.1c-1.2,0.5-2.4,0.9-3.8,1c1.4-0.8,2.4-2.1,2.9-3.6c-1.3,0.8-2.7,1.3-4.2,1.6 C41.7,19.8,40,19,38.2,19c-3.6,0-6.6,2.9-6.6,6.6c0,0.5,0.1,1,0.2,1.5c-5.5-0.3-10.3-2.9-13.5-6.9c-0.6,1-0.9,2.1-0.9,3.3 c0,2.3,1.2,4.3,2.9,5.5c-1.1,0-2.1-0.3-3-0.8c0,0,0,0.1,0,0.1c0,3.2,2.3,5.8,5.3,6.4c-0.6,0.1-1.1,0.2-1.7,0.2c-0.4,0-0.8,0-1.2-0.1 c0.8,2.6,3.3,4.5,6.1,4.6c-2.2,1.8-5.1,2.8-8.2,2.8c-0.5,0-1.1,0-1.6-0.1c2.9,1.9,6.4,2.9,10.1,2.9c12.1,0,18.7-10,18.7-18.7 c0-0.3,0-0.6,0-0.8C46,24.5,47.1,23.4,48,22.1z" fill="white"></path></svg></button></p><p class="SnsShare__StyledSns-ltvfsi-0 leEKit"><button aria-label="facebook" class="react-share__ShareButton" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer"><svg viewBox="0 0 64 64" width="36" height="36"><circle cx="32" cy="32" r="31" fill="#3b5998"></circle><path d="M34.1,47V33.3h4.6l0.7-5.3h-5.3v-3.4c0-1.5,0.4-2.6,2.6-2.6l2.8,0v-4.8c-0.5-0.1-2.2-0.2-4.1-0.2 c-4.1,0-6.9,2.5-6.9,7V28H24v5.3h4.6V47H34.1z" fill="white"></path></svg></button></p><p class="SnsShare__StyledSns-ltvfsi-0 leEKit"><button aria-label="line" class="react-share__ShareButton" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer"><svg viewBox="0 0 64 64" width="36" height="36"><circle cx="32" cy="32" r="31" fill="#00b800"></circle><path d="M52.62 30.138c0 3.693-1.432 7.019-4.42 10.296h.001c-4.326 4.979-14 11.044-16.201 11.972-2.2.927-1.876-.591-1.786-1.112l.294-1.765c.069-.527.142-1.343-.066-1.865-.232-.574-1.146-.872-1.817-1.016-9.909-1.31-17.245-8.238-17.245-16.51 0-9.226 9.251-16.733 20.62-16.733 11.37 0 20.62 7.507 20.62 16.733zM27.81 25.68h-1.446a.402.402 0 0 0-.402.401v8.985c0 .221.18.4.402.4h1.446a.401.401 0 0 0 .402-.4v-8.985a.402.402 0 0 0-.402-.401zm9.956 0H36.32a.402.402 0 0 0-.402.401v5.338L31.8 25.858a.39.39 0 0 0-.031-.04l-.002-.003-.024-.025-.008-.007a.313.313 0 0 0-.032-.026.255.255 0 0 1-.021-.014l-.012-.007-.021-.012-.013-.006-.023-.01-.013-.005-.024-.008-.014-.003-.023-.005-.017-.002-.021-.003-.021-.002h-1.46a.402.402 0 0 0-.402.401v8.985c0 .221.18.4.402.4h1.446a.401.401 0 0 0 .402-.4v-5.337l4.123 5.568c.028.04.063.072.101.099l.004.003a.236.236 0 0 0 .025.015l.012.006.019.01a.154.154 0 0 1 .019.008l.012.004.028.01.005.001a.442.442 0 0 0 .104.013h1.446a.4.4 0 0 0 .401-.4v-8.985a.402.402 0 0 0-.401-.401zm-13.442 7.537h-3.93v-7.136a.401.401 0 0 0-.401-.401h-1.447a.4.4 0 0 0-.401.401v8.984a.392.392 0 0 0 .123.29c.072.068.17.111.278.111h5.778a.4.4 0 0 0 .401-.401v-1.447a.401.401 0 0 0-.401-.401zm21.429-5.287c.222 0 .401-.18.401-.402v-1.446a.401.401 0 0 0-.401-.402h-5.778a.398.398 0 0 0-.279.113l-.005.004-.006.008a.397.397 0 0 0-.111.276v8.984c0 .108.043.206.112.278l.005.006a.401.401 0 0 0 .284.117h5.778a.4.4 0 0 0 .401-.401v-1.447a.401.401 0 0 0-.401-.401h-3.93v-1.519h3.93c.222 0 .401-.18.401-.402V29.85a.401.401 0 0 0-.401-.402h-3.93V27.93h3.93z" fill="white"></path></svg></button></p><p class="SnsShare__StyledSns-ltvfsi-0 leEKit"><button aria-label="pocket" class="react-share__ShareButton" style="background-color:transparent;border:none;padding:0;font:inherit;color:inherit;cursor:pointer"><svg viewBox="0 0 64 64" width="36" height="36"><circle cx="32" cy="32" r="31" fill="#EF3F56"></circle><path d="M41.084 29.065l-7.528 7.882a2.104 2.104 0 0 1-1.521.666 2.106 2.106 0 0 1-1.522-.666l-7.528-7.882c-.876-.914-.902-2.43-.065-3.384.84-.955 2.228-.987 3.1-.072l6.015 6.286 6.022-6.286c.88-.918 2.263-.883 3.102.071.841.938.82 2.465-.06 3.383l-.015.002zm6.777-10.976C47.463 16.84 46.361 16 45.14 16H18.905c-1.2 0-2.289.82-2.716 2.044-.125.363-.189.743-.189 1.125v10.539l.112 2.096c.464 4.766 2.73 8.933 6.243 11.838.06.053.125.102.19.153l.04.033c1.882 1.499 3.986 2.514 6.259 3.014a14.662 14.662 0 0 0 6.13.052c.118-.042.235-.065.353-.087.03 0 .065-.022.098-.042a15.395 15.395 0 0 0 6.011-2.945l.039-.045.18-.153c3.502-2.902 5.765-7.072 6.248-11.852L48 29.674v-10.52c0-.366-.041-.728-.161-1.08l.022.015z" fill="white"></path></svg></button></p></div></main><footer class="Footer__StyledFooter-sc-194zpt0-0 iLQnqB"><div class="Footer__StyledFooterInner-sc-194zpt0-1 dHrqrD"><p class="Footer__StyledFooterText-sc-194zpt0-3 fvxBNH">© おいなり (tkcco21)</p><div><a href="https://twitter.com/tkcco21" target="_blank" rel="noopener noreferrer" class="Footer__StyledFooterSnsLink-sc-194zpt0-2 bpDzDD">Twitter</a><a href="https://github.com/tkcco21" target="_blank" rel="noopener noreferrer" class="Footer__StyledFooterSnsLink-sc-194zpt0-2 bpDzDD">GitHub</a></div></div></footer></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/blog/my_keyboard_shortcut_for_vscode/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"app":["/app-81c659121c063d9f28a7.js"],"component---src-templates-blog-post-index-jsx":["/component---src-templates-blog-post-index-jsx-4b1bbd23b6200f03e3f7.js"],"component---src-pages-404-jsx":["/component---src-pages-404-jsx-d342d7dfe43e4e560a32.js"],"component---src-pages-about-jsx":["/component---src-pages-about-jsx-36d3ee2b82d8527b3b1e.js"],"component---src-pages-index-jsx":["/component---src-pages-index-jsx-cd6af7a4dedfbf0231a8.js"],"component---src-pages-update-information-jsx":["/component---src-pages-update-information-jsx-7e38ea638230b46ca4dd.js"],"component---src-pages-weekly-report-jsx":["/component---src-pages-weekly-report-jsx-70c1a22366f95edc8c4c.js"]};/*]]>*/</script><script src="/webpack-runtime-7ac4f9e9ac436d474816.js" async=""></script><script src="/styles-c912f09ff5fbb2e6c2c4.js" async=""></script><script src="/app-81c659121c063d9f28a7.js" async=""></script><script src="/commons-9c7cf1fc31d113b042b1.js" async=""></script><script src="/component---src-templates-blog-post-index-jsx-4b1bbd23b6200f03e3f7.js" async=""></script></body></html>
