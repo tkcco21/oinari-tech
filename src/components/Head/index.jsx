@@ -16,7 +16,7 @@ export const Head = ({ pathname }) => {
       {/* <meta name="robots" content="nofollow" /> */}
       {/* ↑ちゃんと公開するときは外す */}
 
-      <meta property="description" content={meta.description} />
+      <meta name="description" content={meta.description} />
       <meta property="og:description" content={meta.description} />
       <meta property="og:url" content={`${meta.siteUrl}${pathname}`} />
       <meta property="og:type" content="website" />
