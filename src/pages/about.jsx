@@ -69,7 +69,7 @@ export default ({ location }) => {
         <StyledList>
           <StyledListItem>単純なアウトプット記事（Home）</StyledListItem>
           <StyledListItem>
-            週ごとの出来事・やったこと・学んだことの概要（Weekly Report）
+            週ごとのプライベートで技術的にやったこと・学んだことの概要（Weekly Report）
           </StyledListItem>
           <StyledListItem>個人での制作物の更新情報（Update Information）</StyledListItem>
         </StyledList>
