@@ -46,7 +46,8 @@ export const StyledArticleBody = styled.div`
   & > table,
   & > ul,
   & > ol,
-  & > blockquote {
+  & > blockquote,
+  & > iframe {
     margin-top: ${props => props.theme.space._16px};
     font-size: ${props => props.theme.font.size.text.secondary};
     letter-spacing: ${props => props.theme.font.space.little};
@@ -212,6 +213,13 @@ export const StyledArticleBody = styled.div`
       & > td {
       }
     }
+  }
+  & > iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+    width: ${props => props.theme.width.normal};
   }
   & > hr {
     margin: ${props => props.theme.space._32px} -${props => props.theme.space._4px};
